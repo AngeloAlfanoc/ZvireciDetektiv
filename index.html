@@ -29,40 +29,43 @@
                 </div>
             </div>
 
-            <nav class="d-flex justify-content-between align-items-center">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex flex-wrap">
                 <div class="brand">
                     <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
                 </div>
-                <div class="d-flex flex-row flex-wrap">
-                    <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap">
-                        <li class="nav-item active pr-2">
-                            <a class="nav-link" href="#">Začít</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Registrace ztráty</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Ztracená zvířata</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Nalezená zvířata</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Jak to funguje</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Příběhy</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Cenik</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">o zvířatech</a>
-                        </li>
-                    </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap">
+                    <li class="nav-item active pr-2">
+                        <a class="nav-link" href="#">Začít</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrace ztráty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ztracená zvířata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nalezená zvířata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jak to funguje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Příběhy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cenik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">o zvířatech</a>
+                    </li>
+                  </ul>
                 </div>
-            </nav>
-
+              </nav>
 
 
 
@@ -125,8 +128,8 @@
 
             <div class="container d-flex flex-column justify-content-center">
                 <h2 class="text-center">Začít</h2>
-                <div class="d-flex flex-row flex-wrap justify-content-between">
-                    <div class="card border-0" style="width: 14rem;">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="card border-0 mx-2" style="width: 14rem;">
                         <h5 class="card-title text-center pt-3">Naše služby</h5>
                         <img class="card-img-top" src="./assets/img/1.jpeg" alt="Card image cap">
                         <div class="card-body">
@@ -137,7 +140,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card border-0" style="width: 14rem;">
+                    <div class="card border-0 mx-2" style="width: 14rem;">
                         <h5 class="card-title text-center pt-3">Proč zvíře detektiv</h5>
                         <img class="card-img-top" src="./assets/img/2.jpeg" alt="Card image cap">
                         <div class="card-body">
@@ -149,7 +152,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card border-0" style="width: 14rem;">
+                    <div class="card border-0 mx-2" style="width: 14rem;">
                         <h5 class="card-title text-center pt-3">Posudky</h5>
                         <img class="card-img-top" src="./assets/img/3.jpeg" alt="Card image cap">
                         <div class="card-body">
@@ -161,7 +164,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card border-0" style="width: 14rem;">
+                    <div class="card border-0 mx-2" style="width: 14rem;">
                         <h5 class="card-title text-center pt-3">Společenství</h5>
                         <img class="card-img-top" src="./assets/img/4.jpeg" alt="Card image cap">
                         <div class="card-body">
@@ -187,7 +190,7 @@
             <div class="newsletter d-flex flex-column justify-content-center p-5">
                 <h2 class="text-center  text-white">Přihlaste se k odběru novinek? Zůstaňte aktualizováni!</h2>
                 <form type='post'>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center flex-wrap">
                         <input placeholder="info@zvirecidetektiv.cz">
                         <button class="buttonWhite" type="button">Předplatit</button>
                     </div>
@@ -404,7 +407,7 @@
     <footer>
         <div class="container">
         <div class="row mt-5">
-            <div class="offset-1 col-5">
+            <div class="offset-1 col-5" id="copyr">
                 <div class="brand">
                     <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
                 </div>
@@ -413,7 +416,7 @@
                     dolore magna aliqua</p>
                 <span>© Copyright 2019 <span class="footer-title">ZvireciDetektiv</span>, All Right Reserved</span>
             </div>
-            <div class="col-2">
+            <div class="col-2" id="f-title-1">
                 <span class="footer-title">Rychlý pohled</span>
                 <br><br>
                 <ul>
@@ -427,8 +430,8 @@
                 </ul>
 
             </div>
-            <div class="col-2"><span class="footer-title">Služeb</span></div>
-            <div class="col-2"><span class="footer-title">Kontaktujte nás</span></div>
+            <div class="col-2"  id="f-title-2"><span class="footer-title">Služeb</span></div>
+            <div class="col-2"  id="f-title-3"><span class="footer-title">Kontaktujte nás</span></div>
         </div>
     </div>
     </footer>

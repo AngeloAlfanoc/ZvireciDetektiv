@@ -11,6 +11,109 @@
   color: #8C4653;
 }
 
+@media only screen and (max-width: 1250px) {
+  .circle-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 125px !important;
+    height: 125px !important;
+  }
+  .circle-container .circle {
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+    height: 70px !important;
+    width: 70px !important;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .circle-container .circle i {
+    font-size: 35px !important;
+    color: #F25252;
+    position: relative;
+    left: 18px !important;
+    top: 20px !important;
+  }
+  #f-title-1 {
+    display: none;
+  }
+  #f-title-2 {
+    display: none;
+  }
+  #f-title-3 {
+    display: none;
+  }
+  #copyr {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .circle-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 72.5px !important;
+    height: 72.5px !important;
+  }
+  .circle-container .circle {
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+    height: 35px !important;
+    width: 35px !important;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .circle-container .circle i {
+    font-size: 17.5px !important;
+    color: #F25252;
+    position: relative;
+    left: 8px !important;
+    top: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #Zacit {
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .newsletter h2 {
+    font-size: 1rem !important;
+  }
+  .newsletter input {
+    height: 30px;
+    width: 200px;
+    font-size: 10px;
+    margin: 0;
+    margin-bottom: 1%;
+  }
+  .newsletter button, .newsletter body .buttonWhite, body .newsletter .buttonWhite {
+    height: 30px;
+    font-size: 10px;
+    width: 200px;
+  }
+}
+
 h1 {
   font-size: 3.438rem !important;
   color: #fff;
