@@ -86,6 +86,9 @@ $accent-color:#8C4653;
         }
 
     }
+    #Contact {
+        display:none;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -426,8 +429,8 @@ body {
 
 
 #premium_plans {
-    height: 700px;
-
+    height: 80vh;
+    width:100vw;
     .plan_wrapper {
         display: flex;
         flex-direction: row;

@@ -88,6 +88,9 @@
     left: 8px !important;
     top: 10px !important;
   }
+  #Contact {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -441,7 +444,8 @@ body .lstfndimg {
 }
 
 #premium_plans {
-  height: 700px;
+  height: 80vh;
+  width: 100vw;
 }
 
 #premium_plans .plan_wrapper {
