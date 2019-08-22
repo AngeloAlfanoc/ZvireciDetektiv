@@ -5,67 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Najít své ztracené zvířata" />
+
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon"/>
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+
     <title>Zvireci Detektiv</title>
 </head>
 
 <body>
+    <div id="stickyNav" class="hidden">
+        <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-white d-flex flex-wrap ">
+
+            <div class="brand">
+                <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
+            </div>
+            <button class="navbar-toggler border-0 w-25" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-icons">
+                    menu
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap ml-5">
+                    <li class="nav-item active px-1">
+                        <a class="nav-link" href="#">Začít</a>
+                    </li>
+                    <li class="nav-item  px-1">
+                        <a class="nav-link" href="#">Registrace ztráty</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Ztracená zvířata</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Nalezená zvířata</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Jak to funguje</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Příběhy</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Cenik</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">o zvířatech</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
     <header>
 
         <!-- START TOP BAR-->
-        <section class="d-flex flex-column container flex-wrap">
+        <section class="d-flex flex-column container flex-wrap ">
             <div id="top-bar" class="top-bar border-bottom">
                 <div id="top-welcome-mess">Vítejte ztracených a nalezených</div>
                 <div id="top-contact">
                     <span>Phone: +12 345 678 901</span>
                     <span>Email: info@zvirecidetektiv.cz</span></div>
                 <div id="top-login-button">
-                    <button>Přihlásit se</button>
+                    <button data-toggle="modal" data-target="#loginScreen">Přihlásit se</button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="loginScreen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+
+                        </div>
+                        <div class="modal-body"><button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>tete
+                            </button>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
+            <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex flex-wrap ">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex flex-wrap">
                 <div class="brand">
                     <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
                 </div>
-                <button class="navbar-toggler border-0 w-25" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler border-0 w-25" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="material-icons">
+                        menu
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap">
-                    <li class="nav-item active pr-2">
-                        <a class="nav-link" href="#">Začít</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Registrace ztráty</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ztracená zvířata</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nalezená zvířata</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jak to funguje</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Příběhy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cenik</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">o zvířatech</a>
-                    </li>
-                  </ul>
+                    <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap ml-5">
+                        <li class="nav-item active px-1">
+                            <a class="nav-link" href="#">Začít</a>
+                        </li>
+                        <li class="nav-item  px-1">
+                            <a class="nav-link" href="#">Registrace ztráty</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Ztracená zvířata</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Nalezená zvířata</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Jak to funguje</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Příběhy</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Cenik</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">o zvířatech</a>
+                        </li>
+                    </ul>
+
                 </div>
-              </nav>
+            </nav>
 
 
 
@@ -122,8 +194,6 @@
         <!-- END SVG MEDIA-->
     </header>
     <main>
-
-        <!-- START -->
         <section id="Zacit" class="p-5 d-flex flex-column justify-content-center">
 
             <div class="container d-flex flex-column justify-content-center">
@@ -184,20 +254,18 @@
             </div>
 
         </section>
-        <!-- END START -->
-
         <section id="Newsletter">
             <div class="newsletter d-flex flex-column justify-content-center p-5">
                 <h2 class="text-center  text-white">Přihlaste se k odběru novinek? Zůstaňte aktualizováni!</h2>
                 <form type='post'>
                     <div class="d-flex justify-content-center flex-wrap">
+
                         <input placeholder="info@zvirecidetektiv.cz">
                         <button class="buttonWhite" type="button">Předplatit</button>
                     </div>
                 </form>
             </div>
         </section>
-
         <section class="RecentlyAdded">
             <div class="p-5 d-flex flex-column "></div>
             <!-- RECENTLY ADDED ANIMALS -->
@@ -325,70 +393,91 @@
 
 
         </section>
-
-        <section id="premium_plans"  class="bg-light h-100">
+        <section id="premium_plans" class="bg-light h-100">
             <div class="container p-5">
-        
+
                 <h2 class="text-center my-5 py-5">Cenové Tabulky</h2>
                 <div class="plan_wrapper">
-                <div class="plan_container my-2">
-                    <div><h5 class="text-center border-bottom">Starter</h5></div>
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center">990,- Kč</h4>
-                        <span class="">per month</span>
+                    <div class="plan_container my-2">
+                        <div>
+                            <h5 class="text-center border-bottom">Starter</h5>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h4 class="text-center">990,- Kč</h4>
+                            <span class="">per month</span>
+                        </div>
+                        <div class="p-1">
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
+                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
+                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
+                        </div>
+                        <button class="w-100">Kup nyní</button>
                     </div>
-                    <div class="p-1"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p></div>
-                    <button class="w-100">Kup nyní</button>
-                </div>
-                <div class="plan_container  my-2">
-                        <div><h5 class="text-center border-bottom">Starter+</h5></div>
+                    <div class="plan_container  my-2">
+                        <div>
+                            <h5 class="text-center border-bottom">Starter+</h5>
+                        </div>
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <h4 class="text-center">1790,- Kč</h4>
                             <span class="">per month</span>
                         </div>
-                        <div class="p-1"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p></div>
+                        <div class="p-1">
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
+                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
+                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
+                        </div>
                         <button class="w-100">Kup nyní</button>
                     </div>
                     <div class="plan_container  my-2">
-                            <div><h5 class="text-center border-bottom">Premium</h5></div>
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="text-center">2490,- Kč</h4>
-                                <span class="">per month</span>
-                            </div>
-                            <div class="p-1"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p></div>
-                            <button class="w-100">Kup nyní</button>
+                        <div>
+                            <h5 class="text-center border-bottom">Premium</h5>
                         </div>
-                        <div class="plan_container  my-2">
-                                <div><h5 class="text-center border-bottom">VIP</h5></div>
-                                <div class="d-flex flex-column justify-content-center align-items-center">
-                                    <h4 class="text-center">3090,- Kč</h4>
-                                    <span class="">per month</span>
-                                </div>
-                                <div class="p-1"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p></div>
-                                <button class="w-100">Kup nyní</button>
-                            </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h4 class="text-center">2490,- Kč</h4>
+                            <span class="">per month</span>
                         </div>
-            
-        </div>
-        </section>
-
-        <section id="Testimonials">
-                <h2 class="text-center my-5">Posudky</h2>
-                <div class="circle-container testimonials">
-                    <div class="quote">
-                            <svg class="svg_position" viewBox="0 0 24 24">
-                                    <path fill="#F25252" d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z" />
-                                </svg>
+                        <div class="p-1">
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
+                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
+                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
+                        </div>
+                        <button class="w-100">Kup nyní</button>
+                    </div>
+                    <div class="plan_container  my-2">
+                        <div>
+                            <h5 class="text-center border-bottom">VIP</h5>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h4 class="text-center">3090,- Kč</h4>
+                            <span class="">per month</span>
+                        </div>
+                        <div class="p-1">
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
+                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
+                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
+                        </div>
+                        <button class="w-100">Kup nyní</button>
                     </div>
                 </div>
-                <div class="w-50 text-center mt-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua
-                        </p>
-                </div>
-                <button class="w-25">Jane Doe, generální ředitel, společnost</button>
-        </section>
 
+            </div>
+        </section>
+        <section id="Testimonials">
+            <h2 class="text-center my-5">Posudky</h2>
+            <div class="circle-container testimonials">
+                <div class="quote">
+                    <svg class="svg_position" viewBox="0 0 24 24">
+                        <path fill="#F25252" d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="w-50 text-center mt-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua
+                </p>
+            </div>
+            <button class="w-25">Jane Doe, generální ředitel, společnost</button>
+        </section>
         <section id="Contact">
             <div class="contact_form float-right">
                 <form>
@@ -406,35 +495,54 @@
     </main>
     <footer>
         <div class="container">
-        <div class="row mt-5">
-            <div class="offset-1 col-5" id="copyr">
-                <div class="brand">
-                    <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
+            <div class="row mt-5">
+                <div class="offset-1 col-5" id="copyr">
+                    <div class="brand">
+                        <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua</p>
+                    <span>© Copyright 2019 <span class="footer-title">ZvireciDetektiv</span>, All Right Reserved</span>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua</p>
-                <span>© Copyright 2019 <span class="footer-title">ZvireciDetektiv</span>, All Right Reserved</span>
-            </div>
-            <div class="col-2" id="f-title-1">
-                <span class="footer-title">Rychlý pohled</span>
-                <br><br>
-                <ul>
-                    <li><a href="#">Registrace ztráty</a></li>
-                    <li><a href="#">Ztracená zvířata </a></li>
-                    <li><a href="#">Nalezená zvířata </a></li>
-                    <li><a href="#">Jak to funguje</a></li>
-                    <li><a href="#">Příběhy</a></li>
-                    <li><a href="#">Ceník</a></li>
-                    <li><a href="#">ozvířatech</a></li>
-                </ul>
+                <div class="col-2" id="f-title-1">
+                    <span class="footer-title">Rychlý pohled</span>
+                    <br><br>
+                    <ul>
+                        <li><a href="#">Registrace ztráty</a></li>
+                        <li><a href="#">Ztracená zvířata </a></li>
+                        <li><a href="#">Nalezená zvířata </a></li>
+                        <li><a href="#">Jak to funguje</a></li>
+                        <li><a href="#">Příběhy</a></li>
+                        <li><a href="#">Ceník</a></li>
+                        <li><a href="#">ozvířatech</a></li>
+                    </ul>
 
+                </div>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+                <div class="col-2" id="f-title-2"><span class="footer-title">Služeb</span></div>
+                <div class="col-2" id="f-title-3"><span class="footer-title">Kontaktujte nás</span></div>
             </div>
-            <div class="col-2"  id="f-title-2"><span class="footer-title">Služeb</span></div>
-            <div class="col-2"  id="f-title-3"><span class="footer-title">Kontaktujte nás</span></div>
         </div>
-    </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
