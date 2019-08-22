@@ -1,3 +1,4 @@
+//--------------- START STYLE--------------------//
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap');
 
 $prim-color: #F25252;
@@ -44,18 +45,38 @@ $accent-color:#8C4653;
         }
 
     }
-    #f-title-1{
-        display:none;
+
+    #f-title-1 {
+        display: none;
     }
-    #f-title-2{
-        display:none;
+
+    #f-title-2 {
+        display: none;
     }
-    #f-title-3{
-        display:none;
+
+    #f-title-3 {
+        display: none;
     }
-    #copyr{
+
+    #copyr {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    #top-welcome-mess {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    #top-contact {
+        margin: 20px 0px 20px 20px;
+        text-align: center;
+    }
+
+    #topbar button {
+        margin: 20px 0px 20px 20px;
     }
 
 }
@@ -86,8 +107,9 @@ $accent-color:#8C4653;
         }
 
     }
+
     #Contact {
-        display:none;
+        display: none;
     }
 }
 
@@ -96,28 +118,59 @@ $accent-color:#8C4653;
         width: 100% !important;
         justify-content: center !important;
     }
+
     .newsletter {
-        h2{
+        h2 {
             font-size: 1rem !important;
         }
+
         input {
-            height:30px;
-            width:200px;
+            height: 30px;
+            width: 200px;
             font-size: 10px;
-            margin:0;
+            margin: 0;
             margin-bottom: 1%;
         }
+
         button {
-            height:30px;
+            height: 30px;
             font-size: 10px;
-            width:200px
+            width: 200px
         }
+    }
+
+    #top-contact {
+        display: none;
+    }
+
+    #overlay-buttons {
+        display: none;
+    }
+
+    #outer-container {
+        height: 50%;
     }
 
 }
 
+.login-modal {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    z-index: 999999999999999999999999999999999999999;
+}
 
-//--------------- START STYLE--------------------//
+.mobileNav {
+    background: #fff;
+    width: 100vw;
+    height: 500vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+
 
 h1 {
     font-size: 3.438rem !important;
@@ -169,6 +222,10 @@ button:hover {
     background-color: #4BCAD0;
 }
 
+button:focus {
+    border: 0;
+}
+
 
 body {
     margin: 0;
@@ -218,6 +275,10 @@ body {
             }
 
             height:90px;
+
+            button:hover {
+                background-color: #fff;
+            }
         }
 
         .head-img {
@@ -238,7 +299,7 @@ body {
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background-image: linear-gradient(to top, #272727, #6E3943);
+                background-image: linear-gradient(to top, rgba(39, 39, 39, 0.500), rgba(110, 57, 67, 0.500));
                 opacity: .6;
             }
 
@@ -433,7 +494,8 @@ body {
 
 #premium_plans {
     height: 80vh;
-    width:100vw;
+    width: 100vw;
+
     .plan_wrapper {
         display: flex;
         flex-direction: row;
@@ -563,28 +625,163 @@ body::-webkit-scrollbar-thumb {
     background-color: $prim-color;
 }
 
-.modal-content{
-    width:100vw;
+.modal-content {
+    width: 100vw;
 }
 
-.navbar{
-    padding:0 ;
+.navbar {
+    padding: 0;
 }
-@media only screen and (min-width: 992px) {
 
-.navbar-expand-lg .navbar-nav .nav-link {
-padding:0;
-    
- }
-}
 
 .stickyNav {
     z-index: 55555;
     position: sticky;
     top: 200px;
-    display:flex;
+    display: flex;
 }
 
 .hidden {
-    display:none;
+    display: none;
+    transition: ease-in-out;
+}
+
+
+
+
+
+.modal {
+    width: 100vw;
+    margin: 0 auto;
+    border-radius: 0;
+    left: 25vw;
+    top: 5vh;
+    padding: 0;
+
+    height: 600px;
+
+
+    .modal-dialog {
+        border-radius: 0;
+        margin: 0;
+        height: 602px;
+
+        .modal-content {
+            height: 80vh;
+            border-radius: 0;
+            width: 50vw;
+            margin:0;
+            padding: 0;
+            height: 602px;
+
+            .modal-body {
+                padding: 0;
+                height: 602px;
+
+                .modal-login-wrapper {
+                    display: flex;
+                    flex-direction: row;
+
+                    .modal-login-buttons {
+                        display: flex;
+                        flex-direction: column;
+
+                        .login-modal-button {
+                            border-right: 1px solid hsla(0, 0%, 36%, 0.733);
+                            background-color: #fff;
+                            border-radius: 0;
+                            width: 15vw;
+                            height: 200px;
+                            min-width: 100px;
+                            max-height: 200px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            span {
+                                color: $prim-color;
+                            }
+
+                            i {
+                                font-size: 56px;
+                                color: $prim-color;
+                            }
+                        }
+
+                        .login-modal-button:hover {
+                            background-color: $sec-color;
+                            -moz-box-shadow:    inset 0 0 10px #000000;
+                            -webkit-box-shadow: inset 0 0 10px #000000;
+                            box-shadow:         inset 0 0 5px #000000;
+                            span {
+                                color: #fff;
+                            }
+
+                            i {
+                                color: #fff;
+                            }
+                            
+                        }
+
+                        .login-modal-button-active {
+                            @extend .login-modal-button;
+                            background-color: $prim-color;
+
+                            span {
+                                color: #fff;
+                            }
+
+                            i {
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .modal-login-input {
+                        width: 85vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h5{
+                            font-size: 23px;
+                            font-weight: 700;
+                        }
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            align-content: center;
+                            i{
+                                position: relative;
+                                top:37px;
+                                left:10px;
+                                width:15px;
+                                color:$accent-color;
+                            }
+
+                            input {
+                                border-radius: 0;
+                                width: 30vw;
+                                background-color: #F8F8F8;
+                            }
+
+                            button {
+                                border-radius: 0;
+                                width: 30vw;
+                                margin-top:15px;
+                                -webkit-box-shadow: -2px 13px 16px -8px rgba(0,0,0,0.75);
+                                -moz-box-shadow: -2px 13px 16px -8px rgba(0,0,0,0.75);
+                                box-shadow: -2px 13px 16px -8px rgba(0,0,0,0.75);
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
 }

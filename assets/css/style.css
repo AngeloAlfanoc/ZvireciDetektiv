@@ -56,6 +56,19 @@
             flex: 0 0 100%;
     max-width: 100%;
   }
+  #top-welcome-mess {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #top-contact {
+    margin: 20px 0px 20px 20px;
+    text-align: center;
+  }
+  #topbar button, #topbar body .buttonWhite, body #topbar .buttonWhite {
+    margin: 20px 0px 20px 20px;
+  }
 }
 
 @media only screen and (max-width: 625px) {
@@ -115,6 +128,32 @@
     font-size: 10px;
     width: 200px;
   }
+  #top-contact {
+    display: none;
+  }
+  #overlay-buttons {
+    display: none;
+  }
+  #outer-container {
+    height: 50%;
+  }
+}
+
+.login-modal {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  z-index: 999999999999999999999999999999999999999;
+}
+
+.mobileNav {
+  background: #fff;
+  width: 100vw;
+  height: 500vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
 }
 
 h1 {
@@ -164,6 +203,10 @@ button, body .buttonWhite {
 
 button:hover, body .buttonWhite:hover {
   background-color: #4BCAD0;
+}
+
+button:focus, body .buttonWhite:focus {
+  border: 0;
 }
 
 body {
@@ -225,6 +268,10 @@ body header nav ul li a:hover {
   color: #8C4653;
 }
 
+body header nav button:hover, body header nav .buttonWhite:hover {
+  background-color: #fff;
+}
+
 body header .head-img {
   width: 100%;
   height: 800px;
@@ -244,8 +291,8 @@ body header .head-img:before {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#272727), to(#6E3943));
-  background-image: linear-gradient(to top, #272727, #6E3943);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(39, 39, 39, 0.5)), to(rgba(110, 57, 67, 0.5)));
+  background-image: linear-gradient(to top, rgba(39, 39, 39, 0.5), rgba(110, 57, 67, 0.5));
   opacity: .6;
 }
 
@@ -612,12 +659,6 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
 }
 
-@media only screen and (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
-  }
-}
-
 .stickyNav {
   z-index: 55555;
   position: -webkit-sticky;
@@ -630,5 +671,171 @@ body::-webkit-scrollbar-thumb {
 
 .hidden {
   display: none;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+}
+
+.modal {
+  width: 100vw;
+  margin: 0 auto;
+  border-radius: 0;
+  left: 25vw;
+  top: 5vh;
+  padding: 0;
+  height: 600px;
+}
+
+.modal .modal-dialog {
+  border-radius: 0;
+  margin: 0;
+  height: 602px;
+}
+
+.modal .modal-dialog .modal-content {
+  height: 80vh;
+  border-radius: 0;
+  width: 50vw;
+  margin: 0;
+  padding: 0;
+  height: 602px;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  height: 602px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active {
+  border-right: 1px solid rgba(92, 92, 92, 0.733);
+  background-color: #fff;
+  border-radius: 0;
+  width: 15vw;
+  height: 200px;
+  min-width: 100px;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button span, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active span {
+  color: #F25252;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button i, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active i {
+  font-size: 56px;
+  color: #F25252;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button:hover, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active:hover {
+  background-color: #4BCAD0;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 5px #000000;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button:hover span, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active:hover span {
+  color: #fff;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button:hover i, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active:hover i {
+  color: #fff;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active {
+  background-color: #F25252;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active span {
+  color: #fff;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active i {
+  color: #fff;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input {
+  width: 85vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input h5 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form i {
+  position: relative;
+  top: 37px;
+  left: 10px;
+  width: 15px;
+  color: #8C4653;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form input {
+  border-radius: 0;
+  width: 30vw;
+  background-color: #F8F8F8;
+}
+
+.modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form button, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form body .buttonWhite, body .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form .buttonWhite {
+  border-radius: 0;
+  width: 30vw;
+  margin-top: 15px;
+  -webkit-box-shadow: -2px 13px 16px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 13px 16px -8px rgba(0, 0, 0, 0.75);
 }
 /*# sourceMappingURL=style.css.map */

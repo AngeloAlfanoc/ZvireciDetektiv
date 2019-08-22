@@ -23,7 +23,7 @@
     <div id="stickyNav" class="hidden">
         <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-white d-flex flex-wrap ">
 
-            <div class="brand">
+            <div class="brand ml-5">
                 <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
             </div>
             <button class="navbar-toggler border-0 w-25" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -63,83 +63,174 @@
             </div>
         </nav>
     </div>
+    <!-- Modal -->
+    <div id="login-screen" class="modal fade m-0" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body ">
+                    <div class="modal-login-wrapper">
+                        <div class="modal-login-buttons">
+                            <button id="login-button-existing" class="login-modal-button-active">
+                                <i class="material-icons">account_circle</i>
+                                <span>přihlásit se</span>
+                            </button>
+                            <button id="login-button-add" class="login-modal-button">
+                                <i class="material-icons">add_circle</i>
+                                <span>Registrovatse</span>
+                            </button>
+                            <button id="login-button-forgotten" class="login-modal-button">
+                                    <i class="material-icons">lock</i>
+                                    <span>ztracené heslo?</span>
+                            </button>
+                        </div>
+                        <div class="modal-login-input">
+                            <section id="modal-existing-user" class="">
+                                <form>
+                                    <h5 class="text-center">Přihlásit se zde</h5>
+                                    <i class="material-icons">account_circle</i>
+                                    <input placeholder="Uživatelské jméno">
+                                    <i class="material-icons">lock</i>
+                                    <input type="password" placeholder="Heslo">
+                                    <button>Přihlásit se</button>
+                                </form>
+                            </section>
+                            <section id="modal-add-user"  class="hidden">
+                                    <form>
+                                            <h5 class="text-center">Nový uživatel</h5>
+                                            <i class="material-icons">account_circle</i>
+                                            <input placeholder="zvolte uživatelské jméno">
+                                            <i class="material-icons">email</i>
+                                            <input placeholder="info@zvirecidetektiv.cz">
+                                            <i class="material-icons">lock</i>
+                                            <input type="password" placeholder="Heslo">
+                                            <i class="material-icons">lock</i>
+                                            <input type="password" placeholder="zopakovat heslo">
+                                            <button>Přihlásit se</button>
+                                        </form>
+                            </section>
+                            <section id="modal-password-forgotten"  class="hidden">
+                                    <form>
+                                            <h5 class="text-center">ztracené heslo</h5>
+                                            <i class="material-icons">email</i>
+                                            <input placeholder="info@zvirecidetektiv.cz">
+                                            <button>Přihlásit se</button>
+                                        </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     <header>
 
         <!-- START TOP BAR-->
-        <section class="d-flex flex-column container flex-wrap ">
-            <div id="top-bar" class="top-bar border-bottom">
-                <div id="top-welcome-mess">Vítejte ztracených a nalezených</div>
-                <div id="top-contact">
+        <section class="container ">
+            <div id="top-bar" class="top-bar border-bottom row">
+                <div id="top-welcome-mess" class="col-4">Vítejte ztracených a nalezených</div>
+                <div id="top-contact" class="col-6">
                     <span>Phone: +12 345 678 901</span>
                     <span>Email: info@zvirecidetektiv.cz</span></div>
-                <div id="top-login-button">
-                    <button data-toggle="modal" data-target="#loginScreen">Přihlásit se</button>
+                <div id="top-login-button" class="col-sm-5 col-md-2 col-lg-2">
+                    <button type="button" data-toggle="modal" data-target="#login-screen">Přihlásit se</button>
+
                 </div>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="loginScreen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content ">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
 
-                        </div>
-                        <div class="modal-body"><button type="button" class="close" data-dismiss="modal"
-                                aria-label="Close">
-                                <span aria-hidden="true">&times;</span>tete
-                            </button>
 
-                        </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white container">
+                <div class="row">
+
+                    <div class="brand col-2">
+                        <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse offset-1  col-9" id="navbarNav">
+                        <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap ml-5">
+                            <li class="nav-item  px-1">
+                                <a class="nav-link" href="#">Registrace ztráty</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Ztracená zvířata</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Nalezená zvířata</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Jak to funguje</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Příběhy</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Cenik</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">o zvířatech</a>
+                            </li>
+                        </ul>
 
                     </div>
-                </div>
-            </div>
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex flex-wrap ">
-
-                <div class="brand">
-                    <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
-                </div>
-                <button class="navbar-toggler border-0 w-25" type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="material-icons">
-                        menu
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap ml-5">
-                        <li class="nav-item active px-1">
-                            <a class="nav-link" href="#">Začít</a>
-                        </li>
-                        <li class="nav-item  px-1">
-                            <a class="nav-link" href="#">Registrace ztráty</a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link" href="#">Ztracená zvířata</a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link" href="#">Nalezená zvířata</a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link" href="#">Jak to funguje</a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link" href="#">Příběhy</a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link" href="#">Cenik</a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link" href="#">o zvířatech</a>
-                        </li>
-                    </ul>
-
+                    <div class="">
+                        <button id="overMobile" class="navbar-toggler border-0 w-25" type="button"
+                            data-toggle="collapse" data-target="#mobileNav" aria-controls="mobileNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="material-icons">
+                                menu
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </nav>
 
+            <div class="collapse navbar-collapse mobileNav" id="mobileNav">
+                <ul class="navbar-nav d-flex flex-column align-items-center flex-wrap mt-5">
 
+                    <li class="nav-item active px-1">
+                        <a class="nav-link" href="#">Začít</a>
+                    </li>
+                    <li class="nav-item  px-1">
+                        <a class="nav-link" href="#">Registrace ztráty</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Ztracená zvířata</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Nalezená zvířata</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Jak to funguje</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Příběhy</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Cenik</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">o zvířatech</a>
+                    </li>
+                </ul>
+
+                <div class="navbar-nav d-flex flex-column align-items-center flex-wrapn">
+
+
+                    <span class="mt-5">Phone: +12 345 678 901</span>
+                    <span>Email: info@zvirecidetektiv.cz</span>
+                    <button class="mt-2" id="closeMobile">Close</button>
+                </div>
+            </div>
+
+
+
+
+            </div>
 
         </section>
         <!-- END TOP BAR-->
@@ -147,9 +238,9 @@
 
         <!-- START SVG MEDIA-->
         <section class="flex-wrap">
-            <div class="head-img">
+            <div id="head-img" class="head-img">
             </div>
-            <div class="outer-container">
+            <div id="outer-container" class="outer-container">
                 <div class="overlay-text">
                     <h1 class="text-white">Ztratil se vám pes či kočka?</h1>
                     <p>První národní pátrací systém po ztracených zvířatech <br>
@@ -157,7 +248,7 @@
                     <button>Registrace Ztráty</button>
 
                 </div>
-                <div class="overlay-buttons">
+                <div id="overlay-buttons" class="overlay-buttons">
                     <div class="circle-container">
                         <div class="circle">
                             <i class="material-icons">phone_android</i>
@@ -194,6 +285,7 @@
         <!-- END SVG MEDIA-->
     </header>
     <main>
+
         <section id="Zacit" class="p-5 d-flex flex-column justify-content-center">
 
             <div class="container d-flex flex-column justify-content-center">
@@ -496,7 +588,7 @@
     <footer>
         <div class="container">
             <div class="row mt-5">
-                <div class="offset-1 col-5" id="copyr">
+                <div class="offset-1 col-5 col-sm-12" id="copyr">
                     <div class="brand">
                         <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
                     </div>
