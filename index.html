@@ -82,8 +82,8 @@
                                 <span>Registrovatse</span>
                             </button>
                             <button id="login-button-forgotten" class="login-modal-button">
-                                    <i class="material-icons">lock</i>
-                                    <span>ztracené heslo?</span>
+                                <i class="material-icons">lock</i>
+                                <span>ztracené heslo?</span>
                             </button>
                         </div>
                         <div class="modal-login-input">
@@ -97,27 +97,27 @@
                                     <button>Přihlásit se</button>
                                 </form>
                             </section>
-                            <section id="modal-add-user"  class="hidden">
-                                    <form>
-                                            <h5 class="text-center">Nový uživatel</h5>
-                                            <i class="material-icons">account_circle</i>
-                                            <input placeholder="zvolte uživatelské jméno">
-                                            <i class="material-icons">email</i>
-                                            <input placeholder="info@zvirecidetektiv.cz">
-                                            <i class="material-icons">lock</i>
-                                            <input type="password" placeholder="Heslo">
-                                            <i class="material-icons">lock</i>
-                                            <input type="password" placeholder="zopakovat heslo">
-                                            <button>Přihlásit se</button>
-                                        </form>
+                            <section id="modal-add-user" class="hidden">
+                                <form>
+                                    <h5 class="text-center">Nový uživatel</h5>
+                                    <i class="material-icons">account_circle</i>
+                                    <input placeholder="zvolte uživatelské jméno">
+                                    <i class="material-icons">email</i>
+                                    <input placeholder="info@zvirecidetektiv.cz">
+                                    <i class="material-icons">lock</i>
+                                    <input type="password" placeholder="Heslo">
+                                    <i class="material-icons">lock</i>
+                                    <input type="password" placeholder="zopakovat heslo">
+                                    <button>Přihlásit se</button>
+                                </form>
                             </section>
-                            <section id="modal-password-forgotten"  class="hidden">
-                                    <form>
-                                            <h5 class="text-center">ztracené heslo</h5>
-                                            <i class="material-icons">email</i>
-                                            <input placeholder="info@zvirecidetektiv.cz">
-                                            <button>Přihlásit se</button>
-                                        </form>
+                            <section id="modal-password-forgotten" class="hidden">
+                                <form>
+                                    <h5 class="text-center">ztracené heslo</h5>
+                                    <i class="material-icons">email</i>
+                                    <input placeholder="info@zvirecidetektiv.cz">
+                                    <button>Přihlásit se</button>
+                                </form>
                             </section>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                 <div id="top-contact" class="col-6">
                     <span>Phone: +12 345 678 901</span>
                     <span>Email: info@zvirecidetektiv.cz</span></div>
-                <div id="top-login-button" class="col-sm-5 col-md-2 col-lg-2">
+                <div id="top-login-button" class="col-sm-5 col-md-2 col-lg-2 ">
                     <button type="button" data-toggle="modal" data-target="#login-screen">Přihlásit se</button>
 
                 </div>
@@ -144,7 +144,7 @@
 
 
             <nav class="navbar navbar-expand-lg navbar-light bg-white container">
-                <div class="row">
+                <div class="d-flex justify-content-between w-100 flex-wrap">
 
                     <div class="brand col-2">
                         <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
@@ -176,19 +176,20 @@
                             </li>
                         </ul>
 
+
+
                     </div>
-                    <div class="">
-                        <button id="overMobile" class="navbar-toggler border-0 w-25" type="button"
-                            data-toggle="collapse" data-target="#mobileNav" aria-controls="mobileNav"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="material-icons">
-                                menu
-                            </span>
-                        </button>
-                    </div>
+                    <button id="overMobile" class="navbar-toggler border-0 w-25" type="button" data-toggle="collapse"
+                        data-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
                 </div>
             </nav>
 
+            <!-- Mobile Menu -->
             <div class="collapse navbar-collapse mobileNav" id="mobileNav">
                 <ul class="navbar-nav d-flex flex-column align-items-center flex-wrap mt-5">
 
@@ -218,7 +219,7 @@
                     </li>
                 </ul>
 
-                <div class="navbar-nav d-flex flex-column align-items-center flex-wrapn">
+                <div class="navbar-nav d-flex flex-column align-items-center flex-wrap">
 
 
                     <span class="mt-5">Phone: +12 345 678 901</span>
@@ -286,6 +287,33 @@
     </header>
     <main>
 
+        <div id="overlay-buttons-2" class="hidden mb-5">
+            <div class="circle-container">
+                <div class="circle">
+                    <i class="material-icons">phone_android</i>
+                    <div class="circle-text">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="circle-container">
+                <div class="circle">
+                    <i class="material-icons">email</i>
+                    <div class="circle-text">
+                    </div>
+                </div>
+
+            </div>
+            <div class="circle-container">
+                <div class="circle">
+                    <i class="material-icons">storage</i>
+                    <div class="circle-text">
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <section id="Zacit" class="p-5 d-flex flex-column justify-content-center">
 
             <div class="container d-flex flex-column justify-content-center">
@@ -588,7 +616,7 @@
     <footer>
         <div class="container">
             <div class="row mt-5">
-                <div class="offset-1 col-5 col-sm-12" id="copyr">
+                <div class="offset-1 col-5" id="copyr">
                     <div class="brand">
                         <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
                     </div>
@@ -611,17 +639,8 @@
                     </ul>
 
                 </div>
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                    crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                    crossorigin="anonymous"></script>
-                <div class="col-2" id="f-title-2"><span class="footer-title">Služeb</span></div>
-                <div class="col-2" id="f-title-3"><span class="footer-title">Kontaktujte nás</span></div>
+
+               
             </div>
         </div>
     </footer>

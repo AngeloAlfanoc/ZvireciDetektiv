@@ -66,47 +66,59 @@
     margin: 20px 0px 20px 20px;
     text-align: center;
   }
-  #topbar button, #topbar body .buttonWhite, body #topbar .buttonWhite {
-    margin: 20px 0px 20px 20px;
+  #top-login-button {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  h1 {
+    font-size: 24px !important;
+    margin-top: 50%;
+  }
+  .overlay-text > p {
+    font-size: 75%;
+  }
+  .head-img {
+    width: 100vw;
+    height: 800px;
+  }
+  .head-img:before {
+    top: 305px;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 
 @media only screen and (max-width: 625px) {
   .circle-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 72.5px !important;
     height: 72.5px !important;
   }
   .circle-container .circle {
-    -webkit-animation: pulse 2s infinite;
-            animation: pulse 2s infinite;
     height: 35px !important;
     width: 35px !important;
-    background-color: #fff;
-    border-radius: 50%;
   }
   .circle-container .circle i {
     font-size: 17.5px !important;
-    color: #F25252;
-    position: relative;
     left: 8px !important;
     top: 10px !important;
   }
   #Contact {
     display: none;
   }
+  #copyr {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 575px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
   #Zacit {
     width: 100% !important;
     -webkit-box-pack: center !important;
@@ -137,6 +149,66 @@
   #outer-container {
     height: 50%;
   }
+  .brand span {
+    font-size: 24px;
+  }
+  #overlay-buttons-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 200px;
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #overlay-buttons-2 .circle-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 250px !important;
+    height: 250px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #overlay-buttons-2 .circle-container .circle {
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+    height: 100px !important;
+    width: 100px !important;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  #overlay-buttons-2 .circle-container .circle i {
+    font-size: 70px !important;
+    color: #F25252;
+    position: relative;
+    left: 13px !important;
+    top: 17px !important;
+  }
+  #overlay-buttons-2 .circle-container .circle:hover {
+    -webkit-animation: none;
+            animation: none;
+    cursor: pointer;
+  }
+  #overlay-buttons-2 .circle-container .circle:hover i {
+    color: #4BCAD0;
+  }
 }
 
 .login-modal {
@@ -156,8 +228,19 @@
   z-index: 9999;
 }
 
+#top-login-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 h1 {
-  font-size: 3.438rem !important;
+  font-size: 3.438rem;
   color: #fff;
   font-weight: 400;
 }
@@ -635,7 +718,6 @@ footer .footer-title {
 }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: #F5F5F5;
 }
@@ -647,7 +729,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #F25252;
 }
 
