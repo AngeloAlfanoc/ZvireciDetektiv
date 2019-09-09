@@ -69,6 +69,48 @@ $accent-color:#8C4653;
 
 }
 
+@media only screen and (max-width: 900px) {
+    .ani_reg_wrap {
+        .animal_registration {
+            padding-top: 50px;
+            width: 100vw !important;
+
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 100%;
+
+                    input {
+                        position: relative;
+                        top: 20px;
+                    }
+                }
+            }
+
+            input {
+                width: 100vw !important;
+            }
+
+            select {
+                width: 100vw !important;
+            }
+
+            input[type="radio"] {
+                height: 100%;
+                width: 30px;
+            }
+        }
+    }
+
+}
+
 @media only screen and (max-width: 767px) {
     #top-contact {
         margin: 20px 0px 20px 20px;
@@ -321,65 +363,96 @@ body {
     font-weight: 300;
     overflow-x: hidden;
 
-    .animal_registration {
-        background-color: #F25252;
-        width: 50vw;
-        padding:2%;
-      
 
-        form {
-            display: flex;
-            flex-direction: column;
 
-            div {
+    .ani_reg_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100vw;
+
+        .animal_registration {
+            width: 50vw;
+            padding: 2%;
+            background-color: $prim-color;
+
+            form {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                align-self: center;
-                margin: 5px;
-                width: 90%;
-                label {
-                    color: #fff;
-                }
-                input {
-                    
-                    text-align: left;
-                    height:40px;
-                    text-align: center;
-                    width:25vw;
-                    padding-left:1%;
+                flex-direction: column;
 
-                }
-                select {
-                    height:40px;
-                    width:25vw;
-                    margin-right: 20px;
-                    border:0;
-                    padding-left:1%;
-                    text-align-last:center; 
-                    border-radius: 100px;
-                    color:#F25252;
-                }
 
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-self: center;
+                    margin: 5px;
+                    width: 90%;
+                    height: 100%;
+
+                    div {
+                        width: 100px;
+                    }
+
+
+                    label {
+                        color: #fff;
+                    }
+
+
+                    input[type="text"] {
+
+                        text-align: left;
+                        height: 40px;
+                        text-align: center;
+                        width: 25vw;
+                        padding-left: 1%;
+
+                    }
+
+                    input[type="radio"] {
+                        height: 18px;
+                        width: 30px;
+                    }
+
+                    input[type="date"] {
+                        @extend input[type="text"]
+                    }
+
+                    select {
+                        height: 40px;
+                        width: 25vw;
+                        margin-right: 20px;
+                        border: 0;
+                        padding-left: 1%;
+                        text-align-last: center;
+                        border-radius: 100px;
+                        color: #F25252;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        height: 300px;
+                        border-radius: 20px;
+                        color: #F25252;
+                        padding: 5%;
+                    }
+                }
             }
-
-
         }
 
-
-    }
-    .animal_registration_2 {
-        background-color: #707070;
-        width: 100vw;
-        padding:2%;
+        .animal_registration_sec {
+            @extend .animal_registration;
+            background-color: #8C4653;
+        }
     }
 
     header {
         font-weight: 100;
         color: #7C7C7C;
-        
+
         flex-wrap: wrap;
-        
+
 
         .top-bar {
             align-items: center;
