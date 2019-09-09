@@ -3,6 +3,14 @@
   color: #F25252;
 }
 
+.bg-color-1 {
+  background-color: #F25252;
+}
+
+.bg-color-2 {
+  background-color: #8C4653;
+}
+
 .secondary {
   color: #4BCAD0;
 }
@@ -62,6 +70,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .ani_reg_wrap .cont {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   .ani_reg_wrap .animal_registration, body .ani_reg_wrap .animal_registration_sec {
     padding-top: 50px;
     width: 100vw !important;
@@ -357,7 +369,7 @@ body .ani_reg_wrap {
 }
 
 body .ani_reg_wrap .animal_registration, body .ani_reg_wrap .animal_registration_sec {
-  width: 50vw;
+  width: 50%;
   padding: 2%;
   background-color: #F25252;
 }
@@ -385,12 +397,18 @@ body .ani_reg_wrap .animal_registration form div, body .ani_reg_wrap .animal_reg
   -ms-flex-item-align: center;
       align-self: center;
   margin: 5px;
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
 body .ani_reg_wrap .animal_registration form div div, body .ani_reg_wrap .animal_registration_sec form div div {
-  width: 100px;
+  width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 body .ani_reg_wrap .animal_registration form div label, body .ani_reg_wrap .animal_registration_sec form div label {
@@ -401,7 +419,7 @@ body .ani_reg_wrap .animal_registration form div input[type="text"], body .ani_r
   text-align: left;
   height: 40px;
   text-align: center;
-  width: 25vw;
+  width: 66%;
   padding-left: 1%;
 }
 
@@ -412,7 +430,7 @@ body .ani_reg_wrap .animal_registration form div input[type="radio"], body .ani_
 
 body .ani_reg_wrap .animal_registration form div select, body .ani_reg_wrap .animal_registration_sec form div select {
   height: 40px;
-  width: 25vw;
+  width: 66%;
   margin-right: 20px;
   border: 0;
   padding-left: 1%;
