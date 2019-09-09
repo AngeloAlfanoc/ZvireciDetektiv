@@ -450,9 +450,10 @@ body {
     header {
         font-weight: 100;
         color: #7C7C7C;
-
         flex-wrap: wrap;
-
+        .push{
+            margin-bottom:-600px;
+        }
 
         .top-bar {
             align-items: center;
