@@ -300,10 +300,70 @@ body {
   overflow-x: hidden;
 }
 
+body .animal_registration {
+  background-color: #F25252;
+  width: 50vw;
+  padding: 2%;
+}
+
+body .animal_registration form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .animal_registration form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 5px;
+  width: 90%;
+}
+
+body .animal_registration form div label {
+  color: #fff;
+}
+
+body .animal_registration form div input {
+  text-align: left;
+  height: 40px;
+  text-align: center;
+  width: 25vw;
+  padding-left: 1%;
+}
+
+body .animal_registration form div select {
+  height: 40px;
+  width: 25vw;
+  margin-right: 20px;
+  border: 0;
+  padding-left: 1%;
+  text-align-last: center;
+  border-radius: 100px;
+  color: #F25252;
+}
+
+body .animal_registration_2 {
+  background-color: #707070;
+  width: 100vw;
+  padding: 2%;
+}
+
 body header {
   font-weight: 100;
   color: #7C7C7C;
-  height: 1080px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -918,5 +978,164 @@ body::-webkit-scrollbar-thumb {
   margin-top: 15px;
   -webkit-box-shadow: -2px 13px 16px -8px rgba(0, 0, 0, 0.75);
   box-shadow: -2px 13px 16px -8px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 969px) {
+  .modal {
+    padding: 0;
+    height: 600px;
+    left: 0;
+    top: 0;
+    width: 120vw;
+    height: 100vh;
+  }
+  .modal .modal-dialog {
+    margin: 0;
+    width: 100vw;
+  }
+  .modal .modal-dialog .modal-content {
+    width: 100vw;
+  }
+  .modal .modal-dialog .modal-content .modal-body {
+    height: 100vh;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+    height: 100vh;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active {
+    background-color: #fff;
+    border-radius: 0;
+    height: 70vh;
+    width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button span, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active span {
+    color: #F25252;
+    font-size: 11px !important;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button i, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active i {
+    font-size: 56px;
+    color: #F25252;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button:hover, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active:hover {
+    background-color: #4BCAD0;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 5px #000000;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button:hover span, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active:hover span {
+    color: #fff;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button:hover i, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active:hover i {
+    color: #fff;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active {
+    border-right: 1px solid rgba(92, 92, 92, 0.733);
+    background-color: #fff;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #F25252;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active span {
+    color: #fff;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-buttons .login-modal-button-active i {
+    color: #fff;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input {
+    width: 100vw;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input h5 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form i {
+    display: none;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form input {
+    border-radius: 0;
+    width: 80vw;
+    background-color: #F8F8F8;
+  }
+  .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form button, .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form body .buttonWhite, body .modal .modal-dialog .modal-content .modal-body .modal-login-wrapper .modal-login-input form .buttonWhite {
+    border-radius: 0;
+    width: 30vw;
+    margin-top: 15px;
+    -webkit-box-shadow: -2px 13px 16px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 13px 16px -8px rgba(0, 0, 0, 0.75);
+  }
 }
 /*# sourceMappingURL=style.css.map */
