@@ -9,12 +9,15 @@ $accent-color:#8C4653;
 .primary {
     color: $prim-color;
 }
+
 .bg-color-1 {
     background-color: #F25252;
 }
+
 .bg-color-2 {
     background-color: #8C4653;
 }
+
 .secondary {
     color: $sec-color;
 }
@@ -23,270 +26,6 @@ $accent-color:#8C4653;
     color: $accent-color;
 }
 
-// RESPONSIVE HERE
-@media only screen and (max-width: 1250px) {
-    .circle-container {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        width: 125px !important;
-        height: 125px !important;
-
-        .circle {
-            animation: pulse 2s infinite;
-            height: 70px !important;
-            width: 70px !important;
-            background-color: #fff;
-            border-radius: 50%;
-
-            i {
-                font-size: 35px !important;
-                color: $prim-color;
-                position: relative;
-                left: 18px !important;
-                top: 20px !important;
-            }
-
-        }
-
-    }
-
-    #f-title-1 {
-        display: none;
-    }
-
-    #f-title-2 {
-        display: none;
-    }
-
-    #f-title-3 {
-        display: none;
-    }
-
-    #copyr {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    #top-welcome-mess {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width: 900px) {
-    .ani_reg_wrap {
-        .cont{
-            margin:0 !important;
-            padding:0 !important;
-        }
-        .animal_registration {
-            padding-top: 50px;
-            width: 100vw !important;
-
-            div {
-                display: flex;
-                flex-wrap: wrap;
-                height: 100%;
-
-                div {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: row;
-                    width: 100%;
-                    height: 100%;
-
-                   
-
-                    input {
-                        position: relative;
-                        top: 20px;
-                    }
-                }
-            }
-
-            input {
-                width: 100vw !important;
-            }
-
-            select {
-                width: 100vw !important;
-            }
-
-            input[type="radio"] {
-                height: 100%;
-                width: 30px;
-            }
-        }
-    }
-
-}
-
-@media only screen and (max-width: 767px) {
-    #top-contact {
-        margin: 20px 0px 20px 20px;
-        text-align: center;
-    }
-
-    #top-login-button {
-        justify-self: center;
-        align-self: center;
-    }
-
-    h1 {
-        font-size: 24px !important;
-        margin-top: 50%;
-    }
-
-    .overlay-text>p {
-        font-size: 75%;
-    }
-
-    .head-img {
-        width: 100vw;
-        height: 800px;
-
-        &:before {
-            top: 305px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-    }
-}
-
-@media only screen and (max-width: 625px) {
-    .circle-container {
-
-
-        width: 72.5px !important;
-        height: 72.5px !important;
-
-        .circle {
-
-            height: 35px !important;
-            width: 35px !important;
-
-
-
-            i {
-                font-size: 17.5px !important;
-
-
-                left: 8px !important;
-                top: 10px !important;
-            }
-
-        }
-
-    }
-
-    #Contact {
-        display: none;
-    }
-
-    #copyr {
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    #Zacit {
-        width: 100% !important;
-        justify-content: center !important;
-    }
-
-    .newsletter {
-        h2 {
-            font-size: 1rem !important;
-        }
-
-        input {
-            height: 30px;
-            width: 200px;
-            font-size: 10px;
-            margin: 0;
-            margin-bottom: 1%;
-        }
-
-        button {
-            height: 30px;
-            font-size: 10px;
-            width: 200px
-        }
-    }
-
-    #top-contact {
-        display: none;
-    }
-
-    #overlay-buttons {
-        display: none;
-    }
-
-    #outer-container {
-        height: 50%;
-    }
-
-    .brand span {
-        font-size: 24px;
-
-    }
-
-    #overlay-buttons-2 {
-        display: flex;
-        height: 200px;
-        width: 100vw;
-        justify-content: center;
-        align-content: center;
-        flex-direction: row;
-
-        .circle-container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 250px !important;
-            height: 250px !important;
-
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
-
-            .circle {
-                animation: pulse 2s infinite;
-                height: 100px !important;
-                width: 100px !important;
-                background-color: #fff;
-                border-radius: 50%;
-
-
-                i {
-                    font-size: 70px !important;
-                    color: $prim-color;
-                    position: relative;
-                    left: 13px !important;
-                    top: 17px !important;
-                }
-
-            }
-
-            .circle:hover {
-                animation: none;
-                cursor: pointer;
-
-                i {
-                    color: $sec-color;
-
-                }
-            }
-        }
-    }
-
-}
 
 .login-modal {
     position: absolute;
@@ -373,15 +112,52 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
-
-
-
     .ani_reg_wrap {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: 100vw;
 
+        .plan_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom:10%;
+        }
+        .inner-summary{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin:0 auto;
+            padding-left:15px;
+            padding-right:15px;
+        }
+        
+        .plan_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 250px;
+            height: 380px;
+            padding-top: 1%;
+            justify-content: center;
+            justify-items: center;
+            justify-self: center;        
+        }
+        
+        h5 {
+            font-size: 22px;
+            color: $accent-color;
+        }
+        
+       
+        
+        button {
+            border-radius: 0;
+        }
         .animal_registration {
             width: 50%;
             padding: 2%;
@@ -402,11 +178,11 @@ body {
                     height: 100%;
 
                     div {
-                        width:66%;
-                        display:flex;
+                        width: 66%;
+                        display: flex;
                         justify-content: start;
-            
-                 
+
+
                     }
 
 
@@ -428,11 +204,12 @@ body {
                     input[type="radio"] {
                         height: 18px;
                         width: 30px;
-                        
+
                     }
 
                     input[type="date"] {
-                        @extend input[type="text"]
+                        @extend input[type="text"];
+                        width: 73%;
                     }
 
                     select {
@@ -462,13 +239,69 @@ body {
             background-color: #8C4653;
         }
     }
+    .pack-pulse {
+        animation: pulse 2s infinite;
+        border: 5px solid rgba(242, 82, 82, 0.788) !important;
+    }
+    .wiz-wrapper {
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        .pack-circle-container {
+            height: 100%;
+            width: 100%;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .inner-wrapper {
+                display:flex;
+                flex-direction: column;
+                justify-items: center;
+                align-content: center;
+                align-items: center;
+                width: 20%;
+                text-align: center;
+            }
+            .pack-circle {
+                height: 180px;
+                width: 180px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 5px solid rgba(75, 201, 208, 0.534);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 15px;
+
+
+                span:nth-child(1) {
+                    font-size: 33px;
+                    font-weight: bolder;
+                    color: $prim-color;
+                }
+            }
+        }
+    }
+
 
     header {
         font-weight: 100;
         color: #7C7C7C;
         flex-wrap: wrap;
-        .push{
-            margin-bottom:-600px;
+
+        .push {
+            margin-bottom: -600px;
         }
 
         .top-bar {
@@ -875,10 +708,6 @@ body::-webkit-scrollbar-thumb {
     transition: ease-in-out;
 }
 
-
-
-
-
 .modal {
     width: 100vw;
     margin: 0 auto;
@@ -1019,6 +848,58 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+
+
+// RESPONSIVE HERE
+@media only screen and (max-width: 1250px) {
+    .circle-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 125px !important;
+        height: 125px !important;
+
+        .circle {
+            animation: pulse 2s infinite;
+            height: 70px !important;
+            width: 70px !important;
+            background-color: #fff;
+            border-radius: 50%;
+
+            i {
+                font-size: 35px !important;
+                color: $prim-color;
+                position: relative;
+                left: 18px !important;
+                top: 20px !important;
+            }
+
+        }
+
+    }
+
+    #f-title-1 {
+        display: none;
+    }
+
+    #f-title-2 {
+        display: none;
+    }
+
+    #f-title-3 {
+        display: none;
+    }
+
+    #copyr {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #top-welcome-mess {
+        display: none;
+    }
+
+};
 @media only screen and (max-width: 969px) {
 
     .modal {
@@ -1163,4 +1044,215 @@ body::-webkit-scrollbar-thumb {
         }
     }
 
-}
+};
+@media only screen and (max-width: 900px) {
+    .ani_reg_wrap {
+        .cont {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .animal_registration {
+            padding-top: 50px;
+            width: 100vw !important;
+
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 100%;
+
+
+
+                    input {
+                        position: relative;
+                        top: 20px;
+                    }
+                }
+            }
+
+            input {
+                width: 100vw !important;
+            }
+
+            select {
+                width: 100vw !important;
+            }
+
+            input[type="radio"] {
+                height: 100%;
+                width: 30px;
+            }
+        }
+    }
+
+};
+@media only screen and (max-width: 767px) {
+    #top-contact {
+        margin: 20px 0px 20px 20px;
+        text-align: center;
+    }
+
+    #top-login-button {
+        justify-self: center;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 24px !important;
+        margin-top: 50%;
+    }
+
+    .overlay-text>p {
+        font-size: 75%;
+    }
+
+    .head-img {
+        width: 100vw;
+        height: 800px;
+
+        &:before {
+            top: 305px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+};
+@media only screen and (max-width: 625px) {
+    .circle-container {
+
+
+        width: 72.5px !important;
+        height: 72.5px !important;
+
+        .circle {
+
+            height: 35px !important;
+            width: 35px !important;
+
+
+
+            i {
+                font-size: 17.5px !important;
+
+
+                left: 8px !important;
+                top: 10px !important;
+            }
+
+        }
+
+    }
+
+    #Contact {
+        display: none;
+    }
+
+    #copyr {
+        margin: 0;
+    }
+};
+@media only screen and (max-width: 575px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #Zacit {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .newsletter {
+        h2 {
+            font-size: 1rem !important;
+        }
+
+        input {
+            height: 30px;
+            width: 200px;
+            font-size: 10px;
+            margin: 0;
+            margin-bottom: 1%;
+        }
+
+        button {
+            height: 30px;
+            font-size: 10px;
+            width: 200px
+        }
+    }
+
+    #top-contact {
+        display: none;
+    }
+
+    #overlay-buttons {
+        display: none;
+    }
+
+    #outer-container {
+        height: 50%;
+    }
+
+    .brand span {
+        font-size: 24px;
+
+    }
+
+    #overlay-buttons-2 {
+        display: flex;
+        height: 200px;
+        width: 100vw;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+
+        .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 250px !important;
+            height: 250px !important;
+
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+
+            .circle {
+                animation: pulse 2s infinite;
+                height: 100px !important;
+                width: 100px !important;
+                background-color: #fff;
+                border-radius: 50%;
+
+
+                i {
+                    font-size: 70px !important;
+                    color: $prim-color;
+                    position: relative;
+                    left: 13px !important;
+                    top: 17px !important;
+                }
+
+            }
+
+            .circle:hover {
+                animation: none;
+                cursor: pointer;
+
+                i {
+                    color: $sec-color;
+
+                }
+            }
+        }
+    }
+
+};

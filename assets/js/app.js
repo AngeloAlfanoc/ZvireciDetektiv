@@ -56,4 +56,18 @@ $("#login-button-forgotten").click(function (e) {
   
 });
 
+$("#ani_reg_next").click(function (e) { 
+ 
+  $("#pack").removeClass('hidden').addClass('container')
+  $("#info").addClass('hidden')
+  $("#wiz_1_circle").removeClass('pack-pulse')
+  $("#wiz_1_title").removeClass('font-weight-bold')
+  $("#wiz_2_circle").addClass('pack-pulse')
+  $("#wiz_2_title").addClass('font-weight-bold')
+  e.preventDefault();
+});
+
+
+
+
 });
