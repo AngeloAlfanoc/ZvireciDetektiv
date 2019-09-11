@@ -1099,6 +1099,14 @@ body::-webkit-scrollbar-thumb {
 
 };
 @media only screen and (max-width: 767px) {
+
+    .custom-subs{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left:-10px;
+      
+    }
     #top-contact {
         margin: 20px 0px 20px 20px;
         text-align: center;
@@ -1168,6 +1176,8 @@ body::-webkit-scrollbar-thumb {
     body {
         padding: 0;
         margin: 0;
+
+
     }
 
     #Zacit {
@@ -1213,6 +1223,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #overlay-buttons-2 {
+       
         display: flex;
         height: 200px;
         width: 100vw;
@@ -1225,7 +1236,7 @@ body::-webkit-scrollbar-thumb {
             flex-wrap: wrap;
             width: 250px !important;
             height: 250px !important;
-
+            z-index:88;
             justify-content: center;
             align-content: center;
             flex-direction: column;
