@@ -275,6 +275,10 @@ body .pack-pulse {
   border: 5px solid rgba(242, 82, 82, 0.788) !important;
 }
 
+body .pack-border {
+  border: 1px solid #F25252;
+}
+
 body .wiz-wrapper {
   margin: 0 auto;
   padding-left: 15px;
@@ -301,8 +305,8 @@ body .wiz-wrapper {
 body .wiz-wrapper .pack-circle-container {
   height: 100%;
   width: 100%;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,8 +340,8 @@ body .wiz-wrapper .pack-circle-container .inner-wrapper {
 }
 
 body .wiz-wrapper .pack-circle-container .pack-circle {
-  height: 180px;
-  width: 180px;
+  height: 120px;
+  width: 120px;
   background-color: #fff;
   border-radius: 50%;
   border: 5px solid rgba(75, 201, 208, 0.534);
@@ -1193,6 +1197,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 900px) {
+  #wiz-steps {
+    display: none !important;
+  }
   .ani_reg_wrap .cont {
     margin: 0 !important;
     padding: 0 !important;

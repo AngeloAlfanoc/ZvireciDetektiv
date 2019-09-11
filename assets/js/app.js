@@ -66,8 +66,48 @@ $("#ani_reg_next").click(function (e) {
   $("#wiz_2_title").addClass('font-weight-bold')
   e.preventDefault();
 });
+$("#ani_reg_next_2").click(function (e) { 
+ 
+  $("#pack").addClass('hidden').removeClass('container')
+  $("#summary").removeClass('hidden').addClass('container')
+  $("#wiz_2_circle").removeClass('pack-pulse')
+  $("#wiz_2_title").removeClass('font-weight-bold')
+  $("#wiz_3_circle").addClass('pack-pulse')
+  $("#wiz_3_title").addClass('font-weight-bold')
 
+  e.preventDefault();
+});
+$("#ani_reg_next_3").click(function (e) { 
+ 
+  $("#summary").addClass('hidden').removeClass('container')
+  $("#checkout").removeClass('hidden').addClass('container')
+  $("#wiz_3_circle").removeClass('pack-pulse')
+  $("#wiz_3_title").removeClass('font-weight-bold')
+  $("#wiz_4_circle").addClass('pack-pulse')
+  $("#wiz_4_title").addClass('font-weight-bold')
 
+  e.preventDefault();
+});
 
+$("#pack_start").click(function (e) { 
+ $(this).parent().addClass("pack-border");
+ $(this).parent().siblings().removeClass("pack-border");
+  e.preventDefault();
+});
+$("#pack_startplus").click(function (e) { 
+  $(this).parent().addClass("pack-border");
+  $(this).parent().siblings().removeClass("pack-border");
+   e.preventDefault();
+ });
+ $("#pack_prem").click(function (e) { 
+  $(this).parent().addClass("pack-border");
+  $(this).parent().siblings().removeClass("pack-border");
+   e.preventDefault();
+ });
+ $("#pack_vip").click(function (e) { 
+  $(this).parent().addClass("pack-border");
+  $(this).parent().siblings().removeClass("pack-border");
+   e.preventDefault();
+ });
 
 });

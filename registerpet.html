@@ -130,9 +130,6 @@
                             <li class="nav-item px-1">
                                 <a class="nav-link" href="#">Cenik</a>
                             </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">o zvířatech</a>
-                            </li>
                         </ul>
 
 
@@ -196,14 +193,14 @@
         <!-- END TOP BAR-->
     </header>
     <main class="ani_reg_wrap pt-5">
-        <div class="wiz-wrapper">
+        <div id="wiz-steps" class="wiz-wrapper">
             <div class="pack-circle-container">
                 <div class="inner-wrapper mr-1">
                     <div id="wiz_1_circle" class="pack-circle pack-pulse">
                         <span>1.</span>
                     </div>
                     <span  id="wiz_1_title" class="font-weight-bold">Vlož informace
-                        o ztraceném / nalezeném zvířeti</span>
+                        o ztraceném</span>
                 </div>
                 <div class="inner-wrapper  mr-1">
                     <div id="wiz_2_circle" class="pack-circle">
@@ -636,7 +633,7 @@
                             turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
                             orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
                     </div>
-                    <button  id="pack_startplus" class="w-100">Kup nyní</button>
+                    <button id="pack_startplus" class="w-100">Kup nyní</button>
                 </div>
                 <div class="plan_container  my-2">
                     <div>
@@ -651,7 +648,7 @@
                             turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
                             orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
                     </div>
-                    <button   id="pack_prem" class="w-100">Kup nyní</button>
+                    <button id="pack_prem" class="w-100">Kup nyní</button>
                 </div>
                 <div class="plan_container  my-2">
                     <div>
@@ -666,11 +663,13 @@
                             turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
                             orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
                     </div>
-                    <button  id="pack_vip" class="w-100">Kup nyní</button>
+                    <button id="pack_vip" class="w-100">Kup nyní</button>
                 </div>
+                <div class="my-5"> <button id="ani_reg_next_2">další</button></div>
+               
             </div>
         </section>
-        <section id="summary" class="hidden">
+        <section id="summary" class="hidden my-5">
             <h5 class="text-center pb-5">Summary</h5>
             <div class="d-flex flex-direction-row justify-content-between">
                 <div class="d-flex flex-column w-75 ml-5 pl-5  pt-5">
@@ -688,12 +687,12 @@
                     <span>Plan: {chosen plan}</span>
                     <span>Taxes:</span>
                     <span>Total:</span>
-                    <button>Proceed</button>
+                    <button id="ani_reg_next_3">Překontrolovat</button>
                 </div>
             </div>
 
         </section>
-        <section id="checkout" class="hidden"></section>
+        <section id="checkout" class="hidden">Confirm order here</section>
     </main>
     <footer>
         <div class="container">
