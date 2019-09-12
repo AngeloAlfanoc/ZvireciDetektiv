@@ -89,25 +89,5 @@ $("#ani_reg_next_3").click(function (e) {
   e.preventDefault();
 });
 
-$("#pack_start").click(function (e) { 
- $(this).parent().addClass("pack-border");
- $(this).parent().siblings().removeClass("pack-border");
-  e.preventDefault();
-});
-$("#pack_startplus").click(function (e) { 
-  $(this).parent().addClass("pack-border");
-  $(this).parent().siblings().removeClass("pack-border");
-   e.preventDefault();
- });
- $("#pack_prem").click(function (e) { 
-  $(this).parent().addClass("pack-border");
-  $(this).parent().siblings().removeClass("pack-border");
-   e.preventDefault();
- });
- $("#pack_vip").click(function (e) { 
-  $(this).parent().addClass("pack-border");
-  $(this).parent().siblings().removeClass("pack-border");
-   e.preventDefault();
- });
 
 });

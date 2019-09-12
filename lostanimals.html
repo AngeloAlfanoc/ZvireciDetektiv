@@ -13,14 +13,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
-
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
 
 
     <title>Zvireci Detektiv</title>
 </head>
 
 <body>
-    <div id="loader"><div class="lds-heart"><div></div></div></div>
+
     <!-- Modal -->
     <div id="login-screen" class="modal fade m-0" role="dialog">
         <div class="modal-dialog">
@@ -85,10 +85,10 @@
 
         </div>
     </div>
-    <header>
+    <header class="h-100">
 
         <!-- START TOP BAR-->
-        <section class="container ">
+        <section class="container">
             <div id="top-bar" class="top-bar border-bottom row">
                 <div id="top-welcome-mess" class="col-4">Vítejte ztracených a nalezených</div>
                 <div id="top-contact" class="col-6">
@@ -105,7 +105,8 @@
                 <div class="d-flex justify-content-between w-100 flex-wrap">
 
                     <div class="brand col-2">
-                        <a href="./index.html"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
+                        <a href="./index.html"><span class="accent">Zvireci</span><span
+                                class="primary">Detektiv</span></a>
                     </div>
 
 
@@ -115,7 +116,7 @@
                                 <a class="nav-link" href="./registerpet-1.html">Registrace ztráty</a>
                             </li>
                             <li class="nav-item px-1">
-                                <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
+                                <a class="nav-link" href="#">Ztracená zvířata</a>
                             </li>
                             <li class="nav-item px-1">
                                 <a class="nav-link" href="#">Nalezená zvířata</a>
@@ -155,7 +156,7 @@
                         <a class="nav-link" href="#">Registrace ztráty</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
+                        <a class="nav-link" href="#">Ztracená zvířata</a>
                     </li>
                     <li class="nav-item px-1">
                         <a class="nav-link" href="#">Nalezená zvířata</a>
@@ -190,164 +191,77 @@
 
         </section>
         <!-- END TOP BAR-->
-
-
-        <!-- START MEDIA-->
-        <section class="push">
-            <div id="head-img" class="head-img">
-            </div>
-            <div id="outer-container" class="outer-container">
-                <div class="overlay-text">
-                    <h1 class="text-white">Ztratil se vám pes či kočka?</h1>
-                    <p>První národní pátrací systém po ztracených zvířatech <br>
-                        Zdarma zápis do databáze, leták a mnoho dobrých rad...</p>
-                    <button><a href="./registerpet-1.html" class="text-white text-decoration-none">Registrace Ztráty</a></button>
-
-                </div>
-                <div id="overlay-buttons" class="overlay-buttons">
-                    <div class="circle-container">
-                        <div class="circle">
-                            <i class="material-icons">phone_android</i>
-                            <div class="circle-text custom-subs">
-                                <p class="mt-3">SMS</p>
-                                <small class="text-left text-white ml-2 ">Informuj rychle tisíce lidí</small>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="circle-container">
-                        <div class="circle">
-                            <i class="material-icons">email</i>
-                            <div class="circle-text  custom-subs">
-                                <p class="mt-3">EMAILEM</p>
-                                <small class=" text-white ml-2 custom-subs">Na důležité organizace</small>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="circle-container">
-                        <div class="circle">
-                            <i class="material-icons">storage</i>
-                            <div class="circle-text  custom-subs">
-                                <p class="mt-3">DATABÁZE</p>
-                                <small class="text-white ml-2 custom-subs">Ztracená zvířata</small>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END SVG MEDIA-->
     </header>
     <main>
-
-        <div id="overlay-buttons-2" class="hidden mb-5">
-            <div class="circle-container">
-                <div class="circle">
-                    <i class="material-icons">phone_android</i>
-                    <div class="circle-text">
+        <section id="filter-bar" class="bg-color-1 mt-3">
+            <div class="container w-100">
+                <h3 class="text-white text-center">použijte možnosti filtru k rychlejšímu nalezení shody</h3>
+                <div class="filter-options mt-4">
+                    <div>
+                        <select>
+                            <option>
+                                vzestupné datum</option>
+                            <option>klesající datum</option>
+                        </select>
                     </div>
-                </div>
-
-            </div>
-
-            <div class="circle-container">
-                <div class="circle">
-                    <i class="material-icons">email</i>
-                    <div class="circle-text">
+                    <div>
+                        <select>
+                            <option>stáří</option>
+                        </select>
                     </div>
-                </div>
-
-            </div>
-            <div class="circle-container">
-                <div class="circle">
-                    <i class="material-icons">storage</i>
-                    <div class="circle-text">
+                    <div>
+                        <select>
+                            <option>typ zvířete</option>
+                        </select>
                     </div>
-                </div>
-
-            </div>
-        </div>
-        <section id="Zacit" class="mt-5 p-5 d-flex flex-column justify-content-center">
-
-            <div class="container d-flex flex-column justify-content-center">
-                <h2 class="text-center mt-5">Začít</h2>
-                <div class="d-flex flex-wrap justify-content-center">
-                    <div class="card border-0 mx-2" style="width: 14rem;">
-                        <h5 class="card-title text-center pt-3">Naše služby</h5>
-                        <img class="card-img-top" src="./assets/img/1.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua
-                            </p>
-                        </div>
+                    <div>
+                        <button>Jit</button>
                     </div>
-                    <div class="card border-0 mx-2" style="width: 14rem;">
-                        <h5 class="card-title text-center pt-3">Proč zvíře detektiv</h5>
-                        <img class="card-img-top" src="./assets/img/2.jpeg" alt="Card image cap">
-                        <div class="card-body">
-
-                            <p class="card-text">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card border-0 mx-2" style="width: 14rem;">
-                        <h5 class="card-title text-center pt-3">Posudky</h5>
-                        <img class="card-img-top" src="./assets/img/3.jpeg" alt="Card image cap">
-                        <div class="card-body">
-
-                            <p class="card-text">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card border-0 mx-2" style="width: 14rem;">
-                        <h5 class="card-title text-center pt-3">Společenství</h5>
-                        <img class="card-img-top" src="./assets/img/4.jpeg" alt="Card image cap">
-                        <div class="card-body">
-
-                            <p class="card-text">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button class="m-5">Více</button>
                 </div>
             </div>
 
         </section>
-        <section id="Newsletter">
-            <div class="newsletter d-flex flex-column justify-content-center p-5">
-                <h2 class="text-center  text-white">Přihlaste se k odběru novinek? Zůstaňte aktualizováni!</h2>
-                <form type='post'>
-                    <div class="d-flex justify-content-center flex-wrap">
-
-                        <input placeholder="info@zvirecidetektiv.cz">
-                        <button class="buttonWhite" type="button">Předplatit</button>
+        <section class="animal_modal">
+            <div class="modal fade bd-example-modal-lg h-100" id="animal-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content m-0 h-100">
+                        <div class="py-3 bg-color-1">
+                            <h5 class="text-center text-white" >James</h5>
+                        </div>
+                        <div class="d-flex w-100">
+                            <div class="m-1 h-100">
+                                <img class="shadow " style="width:10rem;" src="assets/img/7.jpeg">
+                            </div>
+                            <div class=" w-100">
+                                <ul class="list-group shadow m-1">
+                                    <li class="list-group-item"> Jméno: <strong>Diana</strong></li>
+                                    <li class="list-group-item"> Pohlaví: <strong>Dog</strong></li>
+                                    <li class="list-group-item"> Kraj: 8</li>
+                                    <li class="list-group-item"> Okres: Jihočeský </li>
+                                    <li class="list-group-item"> Plemeno:</li>
+                                    <li class="list-group-item"> Věk: </li>
+                                    <li class="list-group-item"> Barva: </li>
+                                    <li class="list-group-item"> Velikost: </li>
+                                </ul>
+                                <div class="p-3 bg-white m-1 shadow border">Okolnosti ztráty:</div> 
+                            </div>
+                        </div>
+                        <div class="w-100 m-5 d-flex justify-content-center">
+                            <button class= "w-50">close</button>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
-        <section class="RecentlyAdded">
-            <div class="p-5 d-flex flex-column "></div>
+        <section>
+
+            <div class="pb-5 d-flex flex-column "></div>
             <!-- RECENTLY ADDED ANIMALS -->
             <div class="container d-flex flex-column">
                 <h2 class="text-center my-5">Hledáme tyto Vaše mazlíky</h2>
                 <div class="d-flex flex-row justify-content-around flex-wrap mt-5">
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/5.jpeg" alt="Card image cap">
                         <h5 class="text-center my-2">James</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -359,7 +273,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/6.jpg" alt="Card image cap">
                         <h5 class="text-center my-2">Miki</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -371,7 +285,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/7.jpeg" alt="Card image cap">
                         <h5 class="text-center my-2">Diana</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -384,8 +298,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-row justify-content-around flex-wrap mt-5">
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                <div  class="d-flex flex-row justify-content-around flex-wrap mt-5">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/8.jpg" alt="Card image cap">
                         <h5 class="text-center my-2">Albi</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -397,7 +311,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/9.jpeg" alt="Card image cap">
                         <h5 class="text-center my-2">Jane</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -409,7 +323,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/10.jpg" alt="Card image cap">
                         <h5 class="text-center my-2">Tarzan</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -423,7 +337,7 @@
                     </div>
                 </div>
                 <div class="d-flex flex-row justify-content-around flex-wrap mt-5">
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/11.jpeg" alt="Card image cap">
                         <h5 class="text-center my-2">Lassie</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -435,7 +349,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/12.jpeg" alt="Card image cap">
                         <h5 class="text-center my-2">Genko</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -447,7 +361,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                    <div data-toggle="modal" data-target="#animal-modal" class="d-flex flex-column justify-content-center" style="width: 14rem;">
                         <img class="lstfndimg m-auto" src="./assets/img/13.jpeg" alt="Card image cap">
                         <h5 class="text-center my-2">Rocky</h5>
                         <span class="text-center text-uppercase">Lost</span>
@@ -461,111 +375,12 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center my-5">
-                    <button style="width:15rem;">Přejít na celou stránku</button>
+                    <button style="width:15rem;">Načíst další</button>
                 </div>
 
             </div>
 
 
-        </section>
-        <section id="premium_plans" class="bg-light h-100">
-            <div class="container p-5">
-
-                <h2 class="text-center my-5 py-5">Cenové Tabulky</h2>
-                <div class="plan_wrapper">
-                    <div class="plan_container my-2">
-                        <div>
-                            <h5 class="text-center border-bottom">Starter</h5>
-                        </div>
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h4 class="text-center">990,- Kč</h4>
-                            <span class="">per month</span>
-                        </div>
-                        <div class="p-1">
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                        </div>
-                        <button class="w-100">Kup nyní</button>
-                    </div>
-                    <div class="plan_container  my-2">
-                        <div>
-                            <h5 class="text-center border-bottom">Starter+</h5>
-                        </div>
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h4 class="text-center">1790,- Kč</h4>
-                            <span class="">per month</span>
-                        </div>
-                        <div class="p-1">
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                        </div>
-                        <button class="w-100">Kup nyní</button>
-                    </div>
-                    <div class="plan_container  my-2">
-                        <div>
-                            <h5 class="text-center border-bottom">Premium</h5>
-                        </div>
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h4 class="text-center">2490,- Kč</h4>
-                            <span class="">per month</span>
-                        </div>
-                        <div class="p-1">
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                        </div>
-                        <button class="w-100">Kup nyní</button>
-                    </div>
-                    <div class="plan_container  my-2">
-                        <div>
-                            <h5 class="text-center border-bottom">VIP</h5>
-                        </div>
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h4 class="text-center">3090,- Kč</h4>
-                            <span class="">per month</span>
-                        </div>
-                        <div class="p-1">
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                                turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                                orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                        </div>
-                        <button class="w-100">Kup nyní</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="Testimonials">
-            <h2 class="text-center my-5">Posudky</h2>
-            <div class="circle-container testimonials">
-                <div class="quote">
-                    <svg class="svg_position" viewBox="0 0 24 24">
-                        <path fill="#F25252" d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z" />
-                    </svg>
-                </div>
-            </div>
-            <div class="w-50 text-center mt-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua
-                </p>
-            </div>
-            <button class="w-25">Jane Doe, generální ředitel, společnost</button>
-        </section>
-        <section id="Contact">
-            <div class="contact_form float-right">
-                <form>
-                    <h2 class="text-center mb-2 mt-5">Další otázky</h2>
-                    <div class="m-auto">
-                        <input placeholder="Tvé jméno *" type="text" class="form-control">
-                        <input placeholder="Tvůj e-mail *" type="text" class="form-control">
-                        <input placeholder="Telefon" type="text" class="form-control">
-                        <textarea placeholder="Zpráva" type="text" class="form-control"></textarea>
-                        <button>Poslat zprávu</button>
-                    </div>
-                </form>
-            </div>
         </section>
     </main>
     <footer>
@@ -584,8 +399,8 @@
                     <span class="footer-title">Rychlý pohled</span>
                     <br><br>
                     <ul>
-                        <li><a href="./registerpet-1.html">Registrace ztráty</a></li>
-                        <li><a href="./foundanimals.html">Ztracená zvířata </a></li>
+                        <li><a href="#">Registrace ztráty</a></li>
+                        <li><a href="#">Ztracená zvířata </a></li>
                         <li><a href="#">Nalezená zvířata </a></li>
                         <li><a href="#">Jak to funguje</a></li>
                         <li><a href="#">Příběhy</a></li>
@@ -595,7 +410,7 @@
 
                 </div>
 
-               
+
             </div>
         </div>
     </footer>
