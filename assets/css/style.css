@@ -357,8 +357,6 @@ body .ani_reg_wrap .plan_wrapper {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 10%;
 }
 
