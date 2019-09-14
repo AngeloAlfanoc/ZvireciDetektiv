@@ -1,5 +1,5 @@
 $(function () {
-  
+
 $('#overMobile').click(function (e) { 
   $('#mobileNav').removeClass('hidden');
   e.preventDefault();
@@ -56,38 +56,8 @@ $("#login-button-forgotten").click(function (e) {
   
 });
 
-$("#ani_reg_next").click(function (e) { 
- 
-  $("#pack").removeClass('hidden').addClass('container')
-  $("#info").addClass('hidden')
-  $("#wiz_1_circle").removeClass('pack-pulse')
-  $("#wiz_1_title").removeClass('font-weight-bold')
-  $("#wiz_2_circle").addClass('pack-pulse')
-  $("#wiz_2_title").addClass('font-weight-bold')
-  e.preventDefault();
-});
-$("#ani_reg_next_2").click(function (e) { 
- 
-  $("#pack").addClass('hidden').removeClass('container')
-  $("#summary").removeClass('hidden').addClass('container')
-  $("#wiz_2_circle").removeClass('pack-pulse')
-  $("#wiz_2_title").removeClass('font-weight-bold')
-  $("#wiz_3_circle").addClass('pack-pulse')
-  $("#wiz_3_title").addClass('font-weight-bold')
 
-  e.preventDefault();
-});
-$("#ani_reg_next_3").click(function (e) { 
- 
-  $("#summary").addClass('hidden').removeClass('container')
-  $("#checkout").removeClass('hidden').addClass('container')
-  $("#wiz_3_circle").removeClass('pack-pulse')
-  $("#wiz_3_title").removeClass('font-weight-bold')
-  $("#wiz_4_circle").addClass('pack-pulse')
-  $("#wiz_4_title").addClass('font-weight-bold')
 
-  e.preventDefault();
-});
 
 
 });

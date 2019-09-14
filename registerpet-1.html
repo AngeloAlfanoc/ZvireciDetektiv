@@ -112,15 +112,18 @@
 
                     <div class="collapse navbar-collapse offset-1  col-9" id="navbarNav">
                         <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap ml-5">
-                            <li class="nav-item  px-1">
-                                <a class="nav-link" href="./registerpet-1.html">Registrace ztráty</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Ztracená zvířata</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Nalezená zvířata</a>
-                            </li>
+                                <li class="nav-item active px-1">
+                                        <a class="nav-link" href="index.html">Začít</a>
+                                    </li>
+                                    <li class="nav-item  px-1">
+                                        <a class="nav-link" href="./registerpet-1.html">Registrace ztráty</a>
+                                    </li>
+                                    <li class="nav-item px-1">
+                                        <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
+                                    </li>
+                                    <li class="nav-item px-1">
+                                            <a class="nav-link" href="./foundanimals.html">Nalezená zvířata</a>
+                                        </li>
                             <li class="nav-item px-1">
                                 <a class="nav-link" href="#">Jak to funguje</a>
                             </li>
@@ -192,30 +195,32 @@
         </section>
         <!-- END TOP BAR-->
     </header>
+
     <main class="ani_reg_wrap vw-100 pt-5">
-        <div id="wiz-steps" class="wiz-wrapper">
+        <section id="wiz-steps" class="wiz-wrapper">
             <div class="pack-circle-container">
-                <div class="inner-wrapper mr-1">
+                <div class="progress" id="progress"></div>
+                <div class="inner-wrapper mr-1" onclick="location.href='registerpet-1.html'">
                     <div id="wiz_1_circle" class="pack-circle pack-pulse">
                         <span>1.</span>
                     </div>
                     <span  id="wiz_1_title" class="font-weight-bold">Vlož informace
                         o ztraceném</span>
                 </div>
-                <div class="inner-wrapper  mr-1">
+                <div class="inner-wrapper  mr-1" onclick="location.href='registerpet-2.html'">
                     <div id="wiz_2_circle" class="pack-circle">
                         <span>2.</span>
                     </div>
                     <span   id="wiz_2_title">Vyber balíček</span>
                 </div>
-                <div class="inner-wrapper  mr-1">
+                <div class="inner-wrapper  mr-1" onclick="location.href='registerpet-3.html'">
                     <div id="wiz_3_circle" class="pack-circle">
                         <span>3.</span>
                     </div>
                     <span   id="wiz_3_title">Přehled objednávky
                         a platba</span>
                 </div>
-                <div class="inner-wrapper  mr-1">
+                <div class="inner-wrapper  mr-1" onclick="location.href='registerpet-4.html'">
                     <div  id="wiz_4_circle" class="pack-circle">
                         <span>4.</span>
                     </div>
@@ -223,8 +228,8 @@
                     </span>
                 </div>
             </div>
-        </div>
-        <section id="info" class="">
+        </section>
+        <section id="info" class="vw-100">
             <div class="bg-color-1 vw-100">
                 <div class="container d-flex flex-wrap ">
                     <div class="animal_registration">
@@ -604,96 +609,7 @@
                 </div>
             </div>
         </section>
-        <section id="pack" class="hidden">
-            <div class="plan_wrapper">
-                <div class="plan_container my-2">
-                    <div>
-                        <h5 class="text-center border-bottom">Starter</h5>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center">990,- Kč</h4>
-                        <span class="">per month</span>
-                    </div>
-                    <div class="p-1">
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                            turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                            orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                    </div>
-                    <button id="pack_start" class="w-100">Kup nyní</button>
-                </div>
-                <div class="plan_container  my-2">
-                    <div>
-                        <h5 class="text-center border-bottom">Starter+</h5>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center">1790,- Kč</h4>
-                        <span class="">per month</span>
-                    </div>
-                    <div class="p-1">
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                            turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                            orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                    </div>
-                    <button id="pack_startplus" class="w-100">Kup nyní</button>
-                </div>
-                <div class="plan_container  my-2">
-                    <div>
-                        <h5 class="text-center border-bottom">Premium</h5>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center">2490,- Kč</h4>
-                        <span class="">per month</span>
-                    </div>
-                    <div class="p-1">
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                            turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                            orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                    </div>
-                    <button id="pack_prem" class="w-100">Kup nyní</button>
-                </div>
-                <div class="plan_container  my-2">
-                    <div>
-                        <h5 class="text-center border-bottom">VIP</h5>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center">3090,- Kč</h4>
-                        <span class="">per month</span>
-                    </div>
-                    <div class="p-1">
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim
-                            turpis sed pellentesque tempus. Duis sed leo pharetra, consectetur arcu vitae, mollis
-                            orci. Phasellus hendrerit sem non nisi varius, eu ullamcorper eros placerat.</p>
-                    </div>
-                    <button id="pack_vip" class="w-100">Kup nyní</button>
-                </div>
-                <div class="my-5"> <button id="ani_reg_next_2">další</button></div>
-               
-            </div>
-        </section>
-        <section id="summary" class="hidden my-5">
-            <h5 class="text-center pb-5">Summary</h5>
-            <div class="d-flex flex-direction-row justify-content-between">
-                <div class="d-flex flex-column w-75 ml-5 pl-5  pt-5">
-                    <h5>Profile</h5>
-                    <span><a href="#">edit info</a></span>
-                    <span>Name:</span>
-                    <span>Region:</span>
-                    <span>lost/found:</span>
-                    <span>Discription</span>
-                    <span>Photo</span>
-                </div>
-                <div class="d-flex flex-column w-25 mr-5 pr-5  pt-5">
-                    <h5>Order</h5>
-                    <span><a href="#">edit plan</a></span>
-                    <span>Plan: {chosen plan}</span>
-                    <span>Taxes:</span>
-                    <span>Total:</span>
-                    <button id="ani_reg_next_3">Překontrolovat</button>
-                </div>
-            </div>
-
-        </section>
-        <section id="checkout" class="hidden">Confirm order here</section>
+    
     </main>
     <footer>
         <div class="container">
@@ -721,11 +637,25 @@
                     </ul>
 
                 </div>
-
+                <div class="col-2" id="f-title-1">
+                        <span class="footer-title">Rychlý pohled</span>
+                        <br><br>
+                        <ul>
+                            <li><a href="#">Title1</a></li>
+                            <li><a href="#">Title2 </a></li>
+                            <li><a href="#">Title3 </a></li>
+                            <li><a href="#">Title4</a></li>
+                            <li><a href="#">Title5</a></li>
+                            <li><a href="#">Title6</a></li>
+                            <li><a href="#">Title7</a></li>
+                        </ul>
+                       
+                    </div>
 
             </div>
         </div>
     </footer>
+ <script src="assets/js/lib/progressbar.js-1.0.1/dist/progressbar.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -736,6 +666,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/progress.js"></script>
 </body>
 
 </html>

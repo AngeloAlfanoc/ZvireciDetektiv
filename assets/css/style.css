@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap");
+#progress {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  top: 325px;
+}
+
 .primary {
   color: #F25252;
 }
@@ -174,7 +181,7 @@ body header nav button:hover, body header nav .buttonWhite:hover {
 
 body header .head-img {
   width: 100%;
-  height: 800px;
+  height: 820px;
   background: url("../img/header-img.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -186,7 +193,7 @@ body header .head-img {
 body header .head-img:before {
   content: '';
   position: absolute;
-  height: 800Px;
+  height: 820Px;
   top: 205px;
   right: 0;
   bottom: 0;
@@ -338,12 +345,10 @@ body .ani_reg_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
 }
 
@@ -510,8 +515,6 @@ body .wiz-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -524,11 +527,11 @@ body .wiz-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 body .wiz-wrapper .pack-circle-container {
   height: 100%;
-  width: 100%;
   padding-bottom: 20px;
   padding-top: 20px;
   display: -webkit-box;
@@ -561,6 +564,10 @@ body .wiz-wrapper .pack-circle-container .inner-wrapper {
           align-items: center;
   width: 20%;
   text-align: center;
+}
+
+body .wiz-wrapper .pack-circle-container .inner-wrapper:hover {
+  cursor: pointer;
 }
 
 body .wiz-wrapper .pack-circle-container .pack-circle {

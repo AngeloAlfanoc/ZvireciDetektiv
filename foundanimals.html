@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Najít své ztracené zvířata" />
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+
+    <title>Zvireci Detektiv</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div id="login-screen" class="modal fade m-0" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body ">
+                    <div class="modal-login-wrapper">
+                        <div class="modal-login-buttons">
+                            <button id="login-button-existing" class="login-modal-button-active">
+                                <i class="material-icons">account_circle</i>
+                                <span>přihlásit se</span>
+                            </button>
+                            <button id="login-button-add" class="login-modal-button">
+                                <i class="material-icons">add_circle</i>
+                                <span>Registrovatse</span>
+                            </button>
+                            <button id="login-button-forgotten" class="login-modal-button">
+                                <i class="material-icons">lock</i>
+                                <span>ztracené heslo?</span>
+                            </button>
+                        </div>
+                        <div class="modal-login-input">
+                            <section id="modal-existing-user" class="">
+                                <form>
+                                    <h5 class="text-center">Přihlásit se zde</h5>
+                                    <i class="material-icons">account_circle</i>
+                                    <input placeholder="Uživatelské jméno">
+                                    <i class="material-icons">lock</i>
+                                    <input type="password" placeholder="Heslo">
+                                    <button>Přihlásit se</button>
+                                </form>
+                            </section>
+                            <section id="modal-add-user" class="hidden">
+                                <form>
+                                    <h5 class="text-center">Nový uživatel</h5>
+                                    <i class="material-icons">account_circle</i>
+                                    <input placeholder="zvolte uživatelské jméno">
+                                    <i class="material-icons">email</i>
+                                    <input placeholder="info@zvirecidetektiv.cz">
+                                    <i class="material-icons">lock</i>
+                                    <input type="password" placeholder="Heslo">
+                                    <i class="material-icons">lock</i>
+                                    <input type="password" placeholder="zopakovat heslo">
+                                    <button>Přihlásit se</button>
+                                </form>
+                            </section>
+                            <section id="modal-password-forgotten" class="hidden">
+                                <form>
+                                    <h5 class="text-center">ztracené heslo</h5>
+                                    <i class="material-icons">email</i>
+                                    <input placeholder="info@zvirecidetektiv.cz">
+                                    <button>Přihlásit se</button>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <header class="h-100">
+
+        <!-- START TOP BAR-->
+        <section class="container">
+            <div id="top-bar" class="top-bar border-bottom row">
+                <div id="top-welcome-mess" class="col-4">Vítejte ztracených a nalezených</div>
+                <div id="top-contact" class="col-6">
+                    <span>Phone: +12 345 678 901</span>
+                    <span>Email: info@zvirecidetektiv.cz</span></div>
+                <div id="top-login-button" class="col-sm-5 col-md-2 col-lg-2 ">
+                    <button type="button" data-toggle="modal" data-target="#login-screen">Přihlásit se</button>
+
+                </div>
+            </div>
+
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white container">
+                <div class="d-flex justify-content-between w-100 flex-wrap">
+
+                    <div class="brand col-2">
+                        <a href="./index.html"><span class="accent">Zvireci</span><span
+                                class="primary">Detektiv</span></a>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse offset-1  col-9" id="navbarNav">
+                        <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap ml-5">
+                                <li class="nav-item active px-1">
+                                        <a class="nav-link" href="index.html">Začít</a>
+                                    </li>
+                                    <li class="nav-item  px-1">
+                                        <a class="nav-link" href="./registerpet-1.html">Registrace ztráty</a>
+                                    </li>
+                                    <li class="nav-item px-1">
+                                        <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
+                                    </li>
+                                    <li class="nav-item px-1">
+                                            <a class="nav-link" href="./foundanimals.html">Nalezená zvířata</a>
+                                        </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Jak to funguje</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Příběhy</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="#">Cenik</a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <button id="overMobile" class="navbar-toggler border-0 w-25" type="button" data-toggle="collapse"
+                        data-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="collapse navbar-collapse mobileNav" id="mobileNav">
+                <ul class="navbar-nav d-flex flex-column align-items-center flex-wrap mt-5">
+                        <li class="nav-item active px-1">
+                                <a class="nav-link" href="index.html">Začít</a>
+                            </li>
+                            <li class="nav-item  px-1">
+                                <a class="nav-link" href="./registerpet-1.html">Registrace ztráty</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                    <a class="nav-link" href="./foundanimals.html">Nalezená zvířata</a>
+                                </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Jak to funguje</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Příběhy</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">Cenik</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#">o zvířatech</a>
+                    </li>
+                </ul>
+
+                <div class="navbar-nav d-flex flex-column align-items-center flex-wrap">
+
+
+                    <span class="mt-5">Phone: +12 345 678 901</span>
+                    <span>Email: info@zvirecidetektiv.cz</span>
+                    <button class="mt-2" id="closeMobile">Close</button>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+        </section>
+        <!-- END TOP BAR-->
+    </header>
+    <main>
+        <section id="filter-bar" class="bg-color-1 mt-3">
+            <div class="container w-100">
+                <h3 class="text-white text-center">použijte možnosti filtru k rychlejšímu nalezení shody</h3>
+                <div class="filter-options mt-4">
+                    <div>
+                        <select>
+                            <option>
+                                vzestupné datum</option>
+                            <option>klesající datum</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select>
+                            <option>stáří</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select>
+                            <option>typ zvířete</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button>Jit</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="pb-5 d-flex flex-column "></div>
+            <!-- RECENTLY ADDED ANIMALS -->
+            <div class="container d-flex flex-column">
+                <h2 class="text-center my-5">Hledáme tyto Vaše mazlíky</h2>
+                <div class="d-flex flex-row justify-content-around flex-wrap mt-5">
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/5.jpeg" alt="Card image cap">
+                        <h5 class="text-center my-2">James</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/6.jpg" alt="Card image cap">
+                        <h5 class="text-center my-2">Miki</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/7.jpeg" alt="Card image cap">
+                        <h5 class="text-center my-2">Diana</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div  class="d-flex flex-row justify-content-around flex-wrap mt-5">
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/8.jpg" alt="Card image cap">
+                        <h5 class="text-center my-2">Albi</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/9.jpeg" alt="Card image cap">
+                        <h5 class="text-center my-2">Jane</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/10.jpg" alt="Card image cap">
+                        <h5 class="text-center my-2">Tarzan</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-around flex-wrap mt-5">
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/11.jpeg" alt="Card image cap">
+                        <h5 class="text-center my-2">Lassie</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/12.jpeg" alt="Card image cap">
+                        <h5 class="text-center my-2">Genko</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="d-flex flex-column justify-content-center" style="width: 14rem;">
+                        <img class="lstfndimg m-auto" src="./assets/img/13.jpeg" alt="Card image cap">
+                        <h5 class="text-center my-2">Rocky</h5>
+                        <span class="text-center text-uppercase">Found</span>
+                        <div class="text-center">
+                            <p class="">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-5">
+                    <button style="width:15rem;">Načíst další</button>
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="offset-1 col-5" id="copyr">
+                    <div class="brand">
+                        <a href="#"><span class="accent">Zvireci</span><span class="primary">Detektiv</span></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua</p>
+                    <span>© Copyright 2019 <span class="footer-title">ZvireciDetektiv</span>, All Right Reserved</span>
+                </div>
+                <div class="col-2" id="f-title-1">
+                    <span class="footer-title">Rychlý pohled</span>
+                    <br><br>
+                    <ul>
+                        <li><a href="#">Registrace ztráty</a></li>
+                        <li><a href="#">Ztracená zvířata </a></li>
+                        <li><a href="#">Nalezená zvířata </a></li>
+                        <li><a href="#">Jak to funguje</a></li>
+                        <li><a href="#">Příběhy</a></li>
+                        <li><a href="#">Ceník</a></li>
+                        <li><a href="#">ozvířatech</a></li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
