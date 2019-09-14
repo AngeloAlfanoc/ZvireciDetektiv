@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/a3de6f9cc3.js"></script>
+
+
     <title>Zvireci Detektiv</title>
 </head>
 
@@ -111,20 +112,20 @@
 
                     <div class="collapse navbar-collapse offset-1  col-9" id="navbarNav">
                         <ul class="navbar-nav d-flex flex-row align-items-center flex-wrap ml-5">
-                                <li class="nav-item active px-1">
-                                        <a class="nav-link" href="index.html">Začít</a>
-                                    </li>
-                                    <li class="nav-item active  px-1">
-                                        <a class="nav-link" href="./registerpet-1.html">Registrace ztráty</a>
-                                    </li>
-                                    <li class="nav-item px-1">
-                                        <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
-                                    </li>
-                                    <li class="nav-item px-1">
-                                            <a class="nav-link" href="./foundanimals.html">Nalezená zvířata</a>
-                                        </li>
                             <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Jak to funguje</a>
+                                <a class="nav-link" href="index.html">Začít</a>
+                            </li>
+                            <li class="nav-item  px-1">
+                                <a class="nav-link" href="./registerpet-1.html">Registrace ztráty</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
+                            </li>
+                            <li class="nav-item px-1">
+                                    <a class="nav-link" href="./foundanimals.html">Nalezená zvířata</a>
+                                </li>
+                            <li class="nav-item active px-1">
+                                <a class="nav-link" href="./tutorial.html">Jak to funguje</a>
                             </li>
                             <li class="nav-item px-1">
                                 <a class="nav-link" href="#">Příběhy</a>
@@ -150,8 +151,7 @@
             <!-- Mobile Menu -->
             <div class="collapse navbar-collapse mobileNav" id="mobileNav">
                 <ul class="navbar-nav d-flex flex-column align-items-center flex-wrap mt-5">
-
-                        <li class="nav-item active px-1">
+                        <li class="nav-item  px-1">
                                 <a class="nav-link" href="index.html">Začít</a>
                             </li>
                             <li class="nav-item  px-1">
@@ -160,11 +160,11 @@
                             <li class="nav-item px-1">
                                 <a class="nav-link" href="./lostanimals.html">Ztracená zvířata</a>
                             </li>
-                            <li class="nav-item px-1">
+                            <li class="nav-item  px-1">
                                     <a class="nav-link" href="./foundanimals.html">Nalezená zvířata</a>
                                 </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Jak to funguje</a>
+                    <li class="nav-item active px-1">
+                        <a class="nav-link" href="./tutorial.html">Jak to funguje</a>
                     </li>
                     <li class="nav-item px-1">
                         <a class="nav-link" href="#">Příběhy</a>
@@ -194,53 +194,12 @@
         </section>
         <!-- END TOP BAR-->
     </header>
-    <main class="ani_reg_wrap pt-5">
-        <section id="wiz-steps" class="wiz-wrapper">
-            <div class="pack-circle-container">
-                <div class="progress" id="progress"></div>
-                <div class="inner-wrapper mr-1" onclick="location.href='registerpet-1.html'">
-                    <div id="wiz_1_circle" class="pack-circle">
-                        <span>1.</span>
-                    </div>
-                    <span id="wiz_1_title">Vlož informace
-                        o ztraceném</span>
-                </div>
-                <div class="inner-wrapper  mr-1" onclick="location.href='registerpet-2.html'">
-                    <div id="wiz_2_circle" class="pack-circle">
-                        <span>2.</span>
-                    </div>
-                    <span id="wiz_2_title">Vyber balíček</span>
-                </div>
-                <div class="inner-wrapper  mr-1" onclick="location.href='registerpet-3.html'">
-                    <div id="wiz_3_circle" class="pack-circle">
-                        <span>3.</span>
-                    </div>
-                    <span id="wiz_3_title">Přehled objednávky
-                        a platba</span>
-                </div>
-                <div class="inner-wrapper  mr-1" onclick="location.href='registerpet-4.html'">
-                    <div id="wiz_4_circle" class="pack-circle pack-pulse">
-                        <span>4.</span>
-                    </div>
-                    <span id="wiz_4_title" class="font-weight-bold">Potvrzení objednávky
-                    </span>
-                </div>
-            </div>
-        </section>
-
-        <section id="checkout" class="container my-5">
-            <h5 class="text-center">Vyberte způsob platby</h5>
-            <div class="d-flex flex-column align-items-center w-100 mt-5">
-                <div class="d-flex flex-row">
-                     <i class="fab fa-cc-paypal fa-3x mx-2"></i>
-                     <i class="fab fa-cc-visa  fa-3x mx-2"></i>
-                     <i class="fab fa-cc-apple-pay  fa-3x mx-2"></i>
-                     
-                    </div>
-                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-                <button class="mt-5" onclick="location.href='index.html'">Back to start</button>
-            </div>
-           
+    <main>
+        <section class="container text-center">
+            <h5 class="m-5">1. You create an account</h5>
+            <h5 class="m-5">2. You Register your pet</h5>
+            <h5 class="m-5">3. All important organisations get notified</h5>
+            <h5 class="m-5">4. Wait..</h5>
         </section>
     </main>
     <footer>
@@ -267,27 +226,13 @@
                         <li><a href="#">Ceník</a></li>
                         <li><a href="#">ozvířatech</a></li>
                     </ul>
-                   
+
                 </div>
-                <div class="col-2" id="f-title-1">
-                        <span class="footer-title">Rychlý pohled</span>
-                        <br><br>
-                        <ul>
-                            <li><a href="#">Title1</a></li>
-                            <li><a href="#">Title2 </a></li>
-                            <li><a href="#">Title3 </a></li>
-                            <li><a href="#">Title4</a></li>
-                            <li><a href="#">Title5</a></li>
-                            <li><a href="#">Title6</a></li>
-                            <li><a href="#">Title7</a></li>
-                        </ul>
-                       
-                    </div>
+
 
             </div>
         </div>
     </footer>
-    <script src="assets/js/lib/progressbar.js-1.0.1/dist/progressbar.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -298,7 +243,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/progress.js"></script>
 </body>
 
 </html>

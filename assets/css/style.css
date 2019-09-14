@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap");
-#progress {
-  position: absolute;
-  width: 100vw;
-  z-index: -1;
-  top: 325px;
-}
-
 .primary {
   color: #F25252;
 }
@@ -113,6 +106,13 @@ button:focus, body .buttonWhite:focus {
   border: 0;
 }
 
+#progress {
+  position: absolute;
+  min-width: 1080px;
+  z-index: -1;
+  top: 325px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -182,7 +182,7 @@ body header nav button:hover, body header nav .buttonWhite:hover {
 body header .head-img {
   width: 100%;
   height: 820px;
-  background: url("../img/header-img.jpg");
+  background: url("../img/header-img.gif");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -685,7 +685,7 @@ body .ContactFormExtendedProperties, body .contact_form input, body .contact_for
 
 body #Contact {
   background-image: url("../img/contact-img.jpeg");
-  min-height: 130vh;
+  min-height: 200vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -844,7 +844,7 @@ body #Testimonials .quote .svg_position {
   width: 50%;
 }
 
-footer {
+body footer {
   padding-top: 50px;
   padding-bottom: 50px;
   min-height: 200px;
@@ -852,29 +852,29 @@ footer {
   background-color: #FAFAFA;
 }
 
-footer .brand {
+body footer .brand {
   font-size: 2.19rem !important;
   font-weight: 900;
 }
 
-footer :hover {
+body footer :hover {
   text-decoration: none;
 }
 
-footer ul li {
+body footer ul li {
   list-style-type: none;
 }
 
-footer ul li a {
+body footer ul li a {
   color: inherit;
 }
 
-footer ul li :hover {
+body footer ul li :hover {
   text-decoration: none;
   color: #8C4653;
 }
 
-footer .footer-title {
+body footer .footer-title {
   font-weight: 600;
   color: #5C5C5C;
 }
@@ -1496,6 +1496,114 @@ body::-webkit-scrollbar-thumb {
   }
   #overlay-buttons-2 .circle-container .circle:hover i {
     color: #4BCAD0;
+  }
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #212529;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(19px, 0);
+            transform: translate(19px, 0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(19px, 0);
+            transform: translate(19px, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */

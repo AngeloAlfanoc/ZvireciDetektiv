@@ -11,7 +11,7 @@ var bar = new ProgressBar.Line(progress, {
   });
 
   if ($('#wiz_1_circle').hasClass('pack-pulse')) {
-     bar.animate(0.345);
+     bar.animate(0.241);
   }
   if ($('#wiz_2_circle').hasClass('pack-pulse')) {
     bar.animate(0.445);
