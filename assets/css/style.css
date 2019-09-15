@@ -113,6 +113,10 @@ button:focus, body .buttonWhite:focus {
   top: 325px;
 }
 
+.border-color {
+  border: 1px solid #F57777;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -362,6 +366,8 @@ body .ani_reg_wrap .plan_wrapper {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 10%;
 }
 

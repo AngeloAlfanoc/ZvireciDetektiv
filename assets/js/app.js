@@ -15,7 +15,7 @@ $('#closeMobile').click(function (e) {
 });
 $("#login-button").click(function (e) { 
   $('#login-screen').removeClass('hidden')
-  console.log('entered')
+
   e.preventDefault();
   
 });
@@ -28,7 +28,7 @@ $("#login-button-existing").click(function (e) {
     $("#login-button-add").removeClass('login-modal-button-active')
     $("#login-button-forgotten").removeClass('login-modal-button-active')
 
-    console.log('existing user modal opened')
+    
   e.preventDefault();
   
 });
@@ -40,8 +40,6 @@ $("#login-button-add").click(function (e) {
   $("#login-button-add").addClass('login-modal-button-active')
   $("#login-button-forgotten").removeClass('login-modal-button-active')
   $("#login-button-existing").removeClass('login-modal-button-active').addClass('login-modal-button')
-
-  console.log('new user modal opened')
   e.preventDefault();
   
 });
@@ -53,14 +51,14 @@ $("#login-button-forgotten").click(function (e) {
   $("#login-button-existing").removeClass('login-modal-button-active').addClass('login-modal-button')
   $("#login-button-add").removeClass('login-modal-button-active')
   $("#login-button-forgotten").addClass('login-modal-button-active')
-
-  console.log('password forgotten modal opened')
   e.preventDefault();
   
 });
 
-
-
-
+let planArr = $('.plan_wrapper').children().find('button');
+$(planArr).click(function (e) {
+  $(this).parent().siblings().removeClass('border-color').addClass('border')
+  $(this).parent().removeClass('border').addClass('border-color')
+})
 
 });
