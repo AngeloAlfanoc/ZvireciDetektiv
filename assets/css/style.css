@@ -511,7 +511,7 @@ body .ani_reg_wrap .animal_registration_sec {
 body .pack-pulse {
   -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
-  border: 5px solid rgba(242, 82, 82, 0.788) !important;
+  border: 5px solid #F25252 !important;
 }
 
 body .pack-border {
